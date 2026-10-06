@@ -2446,8 +2446,8 @@
     .future-card {
       background: var(--card-bg);
       border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 24px;
+      border-radius: 16px;
+      padding: 0;
       display: flex;
       flex-direction: column;
       transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
@@ -2459,17 +2459,29 @@
       border-color: var(--gold);
       box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
     }
-    .future-icon-wrap {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: rgba(229, 169, 59, 0.12);
-      border: 1px solid var(--gold);
+    .future-card-media {
+      position: relative;
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      background: #111;
+      border-bottom: 1px solid var(--line);
+    }
+    .future-card-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .future-card:hover .future-card-img {
+      transform: scale(1.05);
+    }
+    .future-card-body {
+      padding: 22px 22px 24px;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      margin-bottom: 14px;
+      flex-direction: column;
+      flex-grow: 1;
     }
     .religion-pill-list {
       display: flex;
@@ -2480,12 +2492,19 @@
       border-top: 1px solid var(--line);
     }
     .religion-pill {
-      font-size: 0.78rem;
-      padding: 4px 10px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      padding: 5px 12px;
       border-radius: 20px;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid var(--line);
+      background: rgba(229, 169, 59, 0.08);
+      border: 1px solid rgba(229, 169, 59, 0.25);
       color: var(--ink);
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .religion-pill:hover {
+      background: rgba(229, 169, 59, 0.18);
+      border-color: var(--gold);
     }
     .partner-callout {
       margin-top: 32px;
@@ -3926,69 +3945,85 @@
         <div class="future-grid">
           <!-- Pillar 1: Teaming Up with Local Centers (Manteca & Beyond) -->
           <div class="future-card" style="border-top: 4px solid var(--saffron);">
-            <div class="future-icon-wrap" style="border-color: var(--saffron);">🏛️</div>
-            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Teaming Up with Local Centers (Manteca &amp; Beyond)</h3>
-            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
-              Heritage begins right in our own backyards. We are planning direct partnerships with local community hubs, starting right here with the <strong>Manteca Historical Society &amp; Museum (Manteca Historical Center)</strong> and expanding to regional historical centers across neighboring cities:
-            </p>
-            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0;">
-              <li><strong>Sparking Local Heritage Pride:</strong> Working side-by-side with hometown museums to connect ancient ancestral roots with the stories of local community pioneers and diverse cultural families.</li>
-              <li><strong>Interactive Town Exhibits:</strong> Co-hosting educational pop-up exhibits and hands-on artifact displays at community libraries and historical centers.</li>
-              <li><strong>Expanding Beyond Manteca:</strong> Reaching out to historical societies across the Central Valley and Northern California to build a unified regional heritage alliance.</li>
-            </ul>
+            <div class="future-card-media">
+              <img src="images/future_manteca_centers.jpg" alt="Manteca Historical Society &amp; Museum and local heritage archives" class="future-card-img" loading="lazy">
+            </div>
+            <div class="future-card-body">
+              <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Teaming Up with Local Centers (Manteca &amp; Beyond)</h3>
+              <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+                Heritage begins right in our own backyards. We are planning direct partnerships with local community hubs, starting right here with the <strong>Manteca Historical Society &amp; Museum (Manteca Historical Center)</strong> and expanding to regional historical centers across neighboring cities:
+              </p>
+              <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0;">
+                <li><strong>Sparking Local Heritage Pride:</strong> Working side-by-side with hometown museums to connect ancient ancestral roots with the stories of local community pioneers and diverse cultural families.</li>
+                <li><strong>Interactive Town Exhibits:</strong> Co-hosting educational pop-up exhibits and hands-on artifact displays at community libraries and historical centers.</li>
+                <li><strong>Expanding Beyond Manteca:</strong> Reaching out to historical societies across the Central Valley and Northern California to build a unified regional heritage alliance.</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Pillar 2: Community Heritage Meetings & Discussions -->
           <div class="future-card" style="border-top: 4px solid var(--gold);">
-            <div class="future-icon-wrap" style="border-color: var(--gold);">🗣️</div>
-            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Hosting Community Heritage Meetings</h3>
-            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
-              Preservation starts when people sit down together and talk. We will organize and host recurring, open community gatherings where neighbors of all ages and backgrounds share and celebrate culture:
-            </p>
-            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0;">
-              <li><strong>"Our Heritage, Our Roots" Roundtables:</strong> Free community discussions where residents bring family heirlooms, photo albums, and ancestral traditions to share with neighbors.</li>
-              <li><strong>Listening to Elders:</strong> Creating respectful multigenerational spaces where students and youth sit with community elders to listen to firsthand oral histories before they are forgotten.</li>
-              <li><strong>Cross-Cultural Learning:</strong> Encouraging open, respectful conversations that celebrate diversity, build mutual understanding, and break down cultural divides.</li>
-            </ul>
+            <div class="future-card-media">
+              <img src="images/future_community_meetings.jpg" alt="Intergenerational community heritage roundtable discussion" class="future-card-img" loading="lazy">
+            </div>
+            <div class="future-card-body">
+              <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Hosting Community Heritage Meetings</h3>
+              <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+                Preservation starts when people sit down together and talk. We will organize and host recurring, open community gatherings where neighbors of all ages and backgrounds share and celebrate culture:
+              </p>
+              <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0;">
+                <li><strong>"Our Heritage, Our Roots" Roundtables:</strong> Free community discussions where residents bring family heirlooms, photo albums, and ancestral traditions to share with neighbors.</li>
+                <li><strong>Listening to Elders:</strong> Creating respectful multigenerational spaces where students and youth sit with community elders to listen to firsthand oral histories before they are forgotten.</li>
+                <li><strong>Cross-Cultural Learning:</strong> Encouraging open, respectful conversations that celebrate diversity, build mutual understanding, and break down cultural divides.</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Pillar 3: School Clubs & City Youth Clubs -->
           <div class="future-card" style="border-top: 4px solid #45a86d;">
-            <div class="future-icon-wrap" style="border-color: #45a86d; background: rgba(69, 168, 109, 0.12);">🎒</div>
-            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">School Clubs &amp; City Heritage Clubs</h3>
-            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
-              Youth shouldn't just read history—they should actively help protect it. We are building a network of student-driven clubs in our schools and across our cities:
-            </p>
-            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0;">
-              <li><strong>Middle &amp; High School Chapters:</strong> Launching student-led E-Heritage clubs where students explore ancient cultures, debate philosophical lessons, and organize school culture days.</li>
-              <li><strong>City-Wide Youth Heritage Clubs:</strong> Empowering teens across Manteca and surrounding cities to lead local monument cleanups, library history tours, and heritage scavenger hunts.</li>
-              <li><strong>Student Storytellers:</strong> Equipping students with mobile storytelling tools to document local landmarks, festival celebrations, and family recipes.</li>
-            </ul>
+            <div class="future-card-media">
+              <img src="images/future_youth_clubs.jpg" alt="Students in school heritage club exploring architectural models and history projects" class="future-card-img" loading="lazy">
+            </div>
+            <div class="future-card-body">
+              <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">School Clubs &amp; City Heritage Clubs</h3>
+              <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+                Youth shouldn't just read history—they should actively help protect it. We are building a network of student-driven clubs in our schools and across our cities:
+              </p>
+              <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0;">
+                <li><strong>Middle &amp; High School Chapters:</strong> Launching student-led E-Heritage clubs where students explore ancient cultures, debate philosophical lessons, and organize school culture days.</li>
+                <li><strong>City-Wide Youth Heritage Clubs:</strong> Empowering teens across Manteca and surrounding cities to lead local monument cleanups, library history tours, and heritage scavenger hunts.</li>
+                <li><strong>Student Storytellers:</strong> Equipping students with mobile storytelling tools to document local landmarks, festival celebrations, and family recipes.</li>
+              </ul>
+            </div>
           </div>
 
           <!-- Pillar 4: Sponsoring Cultural Heritage for ALL Religions -->
           <div class="future-card" style="border-top: 4px solid #60a5fa;">
-            <div class="future-icon-wrap" style="border-color: #60a5fa; background: rgba(96, 165, 250, 0.12);">🌍</div>
-            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Sponsoring Cultural Heritage for All Religions</h3>
-            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
-              We are expanding the E-Heritage platform so it branches out to actively support, sponsor, and showcase the profound cultural heritage and artistic traditions of <strong>every world religion and ancient faith</strong>:
-            </p>
-            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0 0 12px;">
-              <li><strong>All Traditions Welcome:</strong> Building dedicated educational hubs for Dharmic traditions (Hinduism, Buddhism, Jainism, Sikhism), Abrahamic faiths (Judaism, Christianity, Islam), and Indigenous &amp; Ancient heritages (Shinto, Zoroastrianism, Native American, African).</li>
-              <li><strong>Focus on Art, Architecture &amp; Ethics:</strong> Highlighting the universal virtues that unite all religions—peace, truth, compassion, selfless charity, and sacred respect for nature.</li>
-              <li><strong>Sponsoring Inclusive Education:</strong> Providing free digital interactive lessons, timelines, and architectural guides so students anywhere can learn about any world religion with authenticity and dignity.</li>
-            </ul>
-            <div class="religion-pill-list">
-              <span class="religion-pill">🕉️ Hinduism</span>
-              <span class="religion-pill">☸️ Buddhism</span>
-              <span class="religion-pill">🪴 Jainism</span>
-              <span class="religion-pill">☬ Sikhism</span>
-              <span class="religion-pill">✝️ Christianity</span>
-              <span class="religion-pill">☪️ Islam</span>
-              <span class="religion-pill">✡️ Judaism</span>
-              <span class="religion-pill">🔥 Zoroastrianism</span>
-              <span class="religion-pill">⛩️ Shinto</span>
-              <span class="religion-pill">🦅 Indigenous Traditions</span>
+            <div class="future-card-media">
+              <img src="images/future_world_religions.jpg" alt="Sacred manuscripts, calligraphy, and architectural heritage of world religions" class="future-card-img" loading="lazy">
+            </div>
+            <div class="future-card-body">
+              <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Sponsoring Cultural Heritage for All Religions</h3>
+              <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+                We are expanding the E-Heritage platform so it branches out to actively support, sponsor, and showcase the profound cultural heritage and artistic traditions of <strong>every world religion and ancient faith</strong>:
+              </p>
+              <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0 0 12px;">
+                <li><strong>All Traditions Welcome:</strong> Building dedicated educational hubs for Dharmic traditions (Hinduism, Buddhism, Jainism, Sikhism), Abrahamic faiths (Judaism, Christianity, Islam), and Indigenous &amp; Ancient heritages (Shinto, Zoroastrianism, Native American, African).</li>
+                <li><strong>Focus on Art, Architecture &amp; Ethics:</strong> Highlighting the universal virtues that unite all religions—peace, truth, compassion, selfless charity, and sacred respect for nature.</li>
+                <li><strong>Sponsoring Inclusive Education:</strong> Providing free digital interactive lessons, timelines, and architectural guides so students anywhere can learn about any world religion with authenticity and dignity.</li>
+              </ul>
+              <div class="religion-pill-list">
+                <span class="religion-pill">Hinduism</span>
+                <span class="religion-pill">Buddhism</span>
+                <span class="religion-pill">Jainism</span>
+                <span class="religion-pill">Sikhism</span>
+                <span class="religion-pill">Christianity</span>
+                <span class="religion-pill">Islam</span>
+                <span class="religion-pill">Judaism</span>
+                <span class="religion-pill">Zoroastrianism</span>
+                <span class="religion-pill">Shinto</span>
+                <span class="religion-pill">Indigenous Traditions</span>
+              </div>
             </div>
           </div>
         </div>
