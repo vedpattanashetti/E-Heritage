@@ -2431,6 +2431,75 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.3);
     }
 
+    /* Future Planning & Global Vision Section */
+    #futurePlanning {
+      padding: 70px 0 50px;
+      border-top: 1px solid var(--line);
+      background: radial-gradient(circle at top right, rgba(229, 169, 59, 0.05), transparent 45%);
+    }
+    .future-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+    .future-card {
+      background: var(--card-bg);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    .future-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+    }
+    .future-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(229, 169, 59, 0.12);
+      border: 1px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+    }
+    .religion-pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .religion-pill {
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--line);
+      color: var(--ink);
+    }
+    .partner-callout {
+      margin-top: 32px;
+      padding: 24px 28px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(224, 90, 43, 0.12) 0%, rgba(229, 169, 59, 0.08) 100%);
+      border: 1.5px solid var(--saffron);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
   </style>
 </head>
 
@@ -2449,6 +2518,7 @@
       <a href="#quizSection">Quiz &amp; Cards</a>
       <a href="#explore">Murti Vision</a>
       <a href="#ask">Ask AI</a>
+      <a href="#futurePlanning">Future Vision</a>
     </div>
   </nav>
 
@@ -3842,14 +3912,104 @@
           </div>
         </div>
       </div>
+    <!-- FUTURE PLANNING & GLOBAL PRESERVATION EXPANSION -->
+    <section id="futurePlanning">
+      <div class="container">
+        <div class="section-title">
+          <span class="tag" style="background: var(--gold-light); color: var(--gold); border-color: var(--gold);">Global Roadmap &amp; Future Vision</span>
+          <h2>Future Planning: Preserving All World Heritages Together</h2>
+          <p class="section-intro">
+            Preserving cultural heritage cannot stop at a single tradition or border. Our future mission is to build an inclusive global preservation network—partnering directly with local organizations, grassroots trusts, hereditary caretakers, and youth clubs to protect sacred monuments, ancient manuscripts, and timeless human wisdom across all world religions.
+          </p>
+        </div>
+
+        <div class="future-grid">
+          <!-- Pillar 1: Local Grassroots Partnerships -->
+          <div class="future-card" style="border-top: 4px solid var(--saffron);">
+            <div class="future-icon-wrap" style="border-color: var(--saffron);">🤝</div>
+            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Local Grassroots Partnerships</h3>
+            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+              Heritage isn't saved by faraway offices; it is saved by the people who live next to the stones. We are building active partnerships with local non-profits, historical societies, archaeological trusts, and community councils.
+            </p>
+            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0 0 12px;">
+              <li><strong>Preservation Toolkits:</strong> Supplying low-heat LED kits, environmental sensors, and non-invasive moisture monitors to local community shrines and historical rooms.</li>
+              <li><strong>Hereditary Custodian Grants:</strong> Supporting the families and priests who have safeguarded local oral histories and stone carvings for generations.</li>
+              <li><strong>Emergency Rescue Network:</strong> Rapid documentation response for flood-threatened or earthquake-vulnerable historic monuments.</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 2: Universal Multi-Faith Expansion -->
+          <div class="future-card" style="border-top: 4px solid var(--gold);">
+            <div class="future-icon-wrap" style="border-color: var(--gold);">🌍</div>
+            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Branching Out to All World Religions</h3>
+            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+              E-Heritage is evolving into an open, universal sanctuary for all human spiritual and cultural treasures. Every faith has monumental architecture, sacred hymns, ethical literature, and fragile arts that deserve digital preservation and respectful education.
+            </p>
+            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0 0 12px;">
+              <li><strong>Dharmic Traditions:</strong> Dedicated interactive modules for Buddhism (stupas &amp; rock edicts), Jainism (marble carving &amp; Ahimsa philosophy), and Sikhism (Gurdwara architecture &amp; selfless seva).</li>
+              <li><strong>Abrahamic Heritages:</strong> Explorations of ancient synagogues &amp; Dead Sea scrolls, medieval cathedral stained-glass &amp; monastic manuscripts, and Islamic geometric tilecraft &amp; calligraphy.</li>
+              <li><strong>Global &amp; Indigenous Traditions:</strong> Honoring Shinto shrine forestry, Native American petroglyphs, African earthen architecture, and Australian Aboriginal songlines.</li>
+            </ul>
+            <div class="religion-pill-list">
+              <span class="religion-pill">☸️ Buddhism</span>
+              <span class="religion-pill">🪴 Jainism</span>
+              <span class="religion-pill">☬ Sikhism</span>
+              <span class="religion-pill">✝️ Christianity</span>
+              <span class="religion-pill">☪️ Islam</span>
+              <span class="religion-pill">✡️ Judaism</span>
+              <span class="religion-pill">🔥 Zoroastrianism</span>
+              <span class="religion-pill">⛩️ Shinto</span>
+              <span class="religion-pill">🦅 Indigenous Traditions</span>
+            </div>
+          </div>
+
+          <!-- Pillar 3: Student & Youth Heritage Chapters -->
+          <div class="future-card" style="border-top: 4px solid #45a86d;">
+            <div class="future-icon-wrap" style="border-color: #45a86d; background: rgba(69, 168, 109, 0.12);">🎒</div>
+            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Youth Ambassador &amp; School Clubs</h3>
+            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+              The greatest shield for world heritage is a curious generation of young people. We are developing classroom curriculum packs and school clubs that connect students to their local heritage:
+            </p>
+            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0 0 12px;">
+              <li><strong>"Adopt a Monument" Program:</strong> Middle and high school students adopt a local neighborhood historical structure to research, monitor, and clean respectfully.</li>
+              <li><strong>Student Oral History Archive:</strong> Teaching kids how to interview grandparents and village elders with smartphones to preserve dying folklore and lullabies.</li>
+              <li><strong>Interactive VR for Under-Resourced Classrooms:</strong> Bringing 3D interactive visits of world heritage wonders to students who cannot afford travel.</li>
+            </ul>
+          </div>
+
+          <!-- Pillar 4: Open Digital Archiving & 3D Twins -->
+          <div class="future-card" style="border-top: 4px solid #60a5fa;">
+            <div class="future-icon-wrap" style="border-color: #60a5fa; background: rgba(96, 165, 250, 0.12);">🏛️</div>
+            <h3 style="color: var(--gold); margin: 0 0 8px; font-size: 1.2rem;">Universal Open-Access 3D Archiving</h3>
+            <p style="font-size: 0.92rem; line-height: 1.6; color: var(--ink); margin: 0 0 12px;">
+              Climate change, pollution, and conflict threaten physical monuments every single day. We are laying the groundwork for an open, non-commercial digital vault:
+            </p>
+            <ul style="font-size: 0.88rem; line-height: 1.65; color: var(--muted); padding-left: 18px; margin: 0 0 12px;">
+              <li><strong>Permanent 3D Laser Twins:</strong> Millimeter-accurate digital LiDAR models freely available to researchers and educators worldwide.</li>
+              <li><strong>Community Ingestion Portal:</strong> Allowing verified cultural institutions and local scholars anywhere on Earth to contribute verified texts, shlokas, and translations.</li>
+              <li><strong>Zero-Carbon Conservation Science:</strong> Advocating globally for heat-free LED retrofitting in sensitive ancient rock caves and cathedrals worldwide.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Partnership Callout Box -->
+        <div class="partner-callout">
+          <div>
+            <h3 style="color: #fff; margin: 0 0 6px; font-size: 1.25rem;">Want to Partner With E-Heritage?</h3>
+            <p style="color: #e6ded7; margin: 0; font-size: 0.95rem; line-height: 1.55; max-width: 680px;">
+              Are you part of a local cultural trust, museum, school, or community preservation society? Join our upcoming preservation network to help safeguard human heritage for the next 1,000 years.
+            </p>
+          </div>
+          <div>
+            <a href="mailto:contact@e-heritage.org" class="button primary" style="white-space: nowrap; font-weight: 700;">Join the Preservation Network</a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <strong>E-Heritage</strong><br />
-    Educational platform for cultural literacy, ethics, and respectful learning.<br />
-    Designed for students, families, and classrooms with respect for diverse traditions.<br />
-    <div style="margin-top: 10px; font-size: 0.92rem; color: var(--gold); font-weight: 600; letter-spacing: 0.3px;">
+    <div style="font-size: 0.95rem; color: var(--gold); font-weight: 600; letter-spacing: 0.3px;">
       Copyright &copy; Pavil • All Rights Reserved
     </div>
   </footer>
@@ -7259,9 +7419,10 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
       ["light", "The L.E.A.D. Mission (Cool LED vs Hot Halogen)", "ledHeritageTool"],
       ["conservation", "The L.E.A.D. Mission & Cool Light Conservation", "ledHeritageTool"],
       ["ai", "Ask E-Heritage AI (Respectful Inquiry)", "askTool"],
-      ["llama", "Ask E-Heritage AI (Llama 3.2 WebGPU Neural LLM)", "askTool"],
-      ["neural", "Ask E-Heritage AI (WebGPU On-Device Neural LLM)", "askTool"],
-      ["qwen", "Ask E-Heritage AI (WebGPU Neural LLM)", "askTool"]
+      ["future", "Future Planning & Global Preservation Network", "futurePlanning"],
+      ["partner", "Partnering with Local Organizations for Preservation", "futurePlanning"],
+      ["religions", "All World Religions & Global Heritage Expansion", "futurePlanning"],
+      ["preservation", "Future Planning: Local Partnerships & Global Heritage", "futurePlanning"]
     ];
 
     function searchApp() {
