@@ -1,0 +1,2736 @@
+[
+  {
+    "category": "Ramayana",
+    "question": "Which revered sage composed the original Sanskrit epic Ramayana in the flowing Anushtup poetic meter?",
+    "options": [
+      {
+        "text": "Sage Vedavyasa",
+        "correct": false
+      },
+      {
+        "text": "Sage Valmiki",
+        "correct": true
+      },
+      {
+        "text": "Sage Vishwamitra",
+        "correct": false
+      },
+      {
+        "text": "Sage Agastya",
+        "correct": false
+      }
+    ],
+    "explanation": "Sage Valmiki is revered as the Adikavi (first poet) who composed the Ramayana after being inspired by Sage Narada's narration.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "In which sacred kingdom and capital city along the Sarayu river was Bhagavan Sri Rama born?",
+    "options": [
+      {
+        "text": "Mithila",
+        "correct": false
+      },
+      {
+        "text": "Ayodhya",
+        "correct": true
+      },
+      {
+        "text": "Hastinapura",
+        "correct": false
+      },
+      {
+        "text": "Kishkindha",
+        "correct": false
+      }
+    ],
+    "explanation": "Ayodhya, the capital of the ancient Kosala kingdom ruled by the Ikshvaku dynasty, is the sacred birthplace of Sri Rama.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Which monumental bow of Lord Shiva did Sri Rama string during the Sita Swayamvara in Mithila?",
+    "options": [
+      {
+        "text": "Pinaka",
+        "correct": true
+      },
+      {
+        "text": "Gandiva",
+        "correct": false
+      },
+      {
+        "text": "Sharanga",
+        "correct": false
+      },
+      {
+        "text": "Vijaya",
+        "correct": false
+      }
+    ],
+    "explanation": "King Janaka held the condition that whoever could lift and string Lord Shiva's divine bow, Pinaka, would marry Devi Sita.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Which section (Kanda) of the Ramayana focuses on Hanuman's daring leap across the ocean to Lanka?",
+    "options": [
+      {
+        "text": "Bala Kanda",
+        "correct": false
+      },
+      {
+        "text": "Ayodhya Kanda",
+        "correct": false
+      },
+      {
+        "text": "Sundara Kanda",
+        "correct": true
+      },
+      {
+        "text": "Yuddha Kanda",
+        "correct": false
+      }
+    ],
+    "explanation": "Sundara Kanda is the fifth book of the Ramayana, named after Hanuman's endearing name 'Sundara', celebrating his selfless leap and finding Sita in Ashoka Vatika.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "What token of remembrance did Devi Sita entrust to Hanuman in the Ashoka Vatika to give to Sri Rama?",
+    "options": [
+      {
+        "text": "A golden bow",
+        "correct": false
+      },
+      {
+        "text": "Her precious Choodamani hair jewel",
+        "correct": true
+      },
+      {
+        "text": "A royal seal",
+        "correct": false
+      },
+      {
+        "text": "A silk scarf",
+        "correct": false
+      }
+    ],
+    "explanation": "Devi Sita gave Hanuman her crest-jewel (Choodamani) as undeniable proof that he had safely located and spoken with her.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "What did Bharata place upon the royal throne of Ayodhya to rule as Rama's humble trustee for 14 years?",
+    "options": [
+      {
+        "text": "Rama's royal crown",
+        "correct": false
+      },
+      {
+        "text": "Rama's sacred wooden sandals (Padukas)",
+        "correct": true
+      },
+      {
+        "text": "Rama's golden sword",
+        "correct": false
+      },
+      {
+        "text": "Rama's ceremonial standard",
+        "correct": false
+      }
+    ],
+    "explanation": "Bharata placed Rama's Padukas on the throne and administered the kingdom from Nandigrama as a devoted servant and caretaker.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Which heroic noble bird fought valiantly against Ravana to rescue Devi Sita, sacrificing his life in the process?",
+    "options": [
+      {
+        "text": "Garuda",
+        "correct": false
+      },
+      {
+        "text": "Jatayu",
+        "correct": true
+      },
+      {
+        "text": "Sampati",
+        "correct": false
+      },
+      {
+        "text": "Mayura",
+        "correct": false
+      }
+    ],
+    "explanation": "The elder eagle-king Jatayu fought fearlessly against Ravana's chariot, showing that righteousness demands standing up for justice regardless of the odds.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Who were the two skilled Vanara engineers credited with architecting the floating stone bridge (Rama Setu) across the ocean?",
+    "options": [
+      {
+        "text": "Sugriva and Angada",
+        "correct": false
+      },
+      {
+        "text": "Nala and Nila",
+        "correct": true
+      },
+      {
+        "text": "Mainda and Dvivida",
+        "correct": false
+      },
+      {
+        "text": "Jambavan and Sushena",
+        "correct": false
+      }
+    ],
+    "explanation": "Nala and Nila, sons of divine architect Vishwakarma, directed the army in building the causeway to Lanka.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Which brother of Ravana renounced the tyrant's arrogance and sought refuge (Sharanagati) with Sri Rama?",
+    "options": [
+      {
+        "text": "Kumbhakarna",
+        "correct": false
+      },
+      {
+        "text": "Indrajit",
+        "correct": false
+      },
+      {
+        "text": "Vibhishana",
+        "correct": true
+      },
+      {
+        "text": "Ahiravana",
+        "correct": false
+      }
+    ],
+    "explanation": "Vibhishana repeatedly counselled Ravana to return Sita. When rejected, he surrendered to Rama, who granted him protection and later crowned him King of Lanka.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Which medicinal mountain did Hanuman carry in his palm to revive the wounded Lakshmana on the battlefield of Lanka?",
+    "options": [
+      {
+        "text": "Govardhana",
+        "correct": false
+      },
+      {
+        "text": "Dronagiri (Sanjeevani Hill)",
+        "correct": true
+      },
+      {
+        "text": "Meru",
+        "correct": false
+      },
+      {
+        "text": "Kailash",
+        "correct": false
+      }
+    ],
+    "explanation": "When unable to identify the Sanjeevani herb in the dark, Hanuman lifted the entire Himalayan hill Dronagiri to save Lakshmana's life.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "What celestial aerial chariot carried Sri Rama, Devi Sita, and their companions back to Ayodhya after the Lanka victory?",
+    "options": [
+      {
+        "text": "Pushpaka Vimana",
+        "correct": true
+      },
+      {
+        "text": "Surya Ratha",
+        "correct": false
+      },
+      {
+        "text": "Indra Vimana",
+        "correct": false
+      },
+      {
+        "text": "Chandra Ratha",
+        "correct": false
+      }
+    ],
+    "explanation": "The Pushpaka Vimana, an ancient celestial aircraft capable of adjusting to any number of passengers, carried them joyfully back to Ayodhya.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Which twin sons of Sri Rama and Devi Sita were educated in the forest ashram of Sage Valmiki?",
+    "options": [
+      {
+        "text": "Nakula and Sahadeva",
+        "correct": false
+      },
+      {
+        "text": "Lava and Kusha",
+        "correct": true
+      },
+      {
+        "text": "Angada and Chandraketu",
+        "correct": false
+      },
+      {
+        "text": "Taksha and Pushkala",
+        "correct": false
+      }
+    ],
+    "explanation": "Lava and Kusha grew up in Valmiki's hermitage, mastered the Vedas and archery, and sang the Ramayana in Rama's royal court.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "What promise given by King Dasharatha led to Sri Rama's fourteen-year forest exile?",
+    "options": [
+      {
+        "text": "A royal decree by the council",
+        "correct": false
+      },
+      {
+        "text": "Two boons previously granted to Queen Kaikeyi",
+        "correct": true
+      },
+      {
+        "text": "A sage's curse on the dynasty",
+        "correct": false
+      },
+      {
+        "text": "A challenge from King Janaka",
+        "correct": false
+      }
+    ],
+    "explanation": "Dasharatha had promised Kaikeyi two boons during an ancient battle, which she redeemed on the eve of Rama's coronation.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "Which wise bear king reminded Hanuman of his latent divine strength when the Vanaras sat despondent by the southern shore?",
+    "options": [
+      {
+        "text": "Jambavan",
+        "correct": true
+      },
+      {
+        "text": "Sushena",
+        "correct": false
+      },
+      {
+        "text": "Sugriva",
+        "correct": false
+      },
+      {
+        "text": "Nila",
+        "correct": false
+      }
+    ],
+    "explanation": "The venerable elder Jambavan reminded Hanuman of his childhood boons and supreme speed, awakening Hanuman to his great mission.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Ramayana",
+    "question": "What golden animal lured Rama and Lakshmana into the Dandaka forest, enabling Ravana to abduct Sita?",
+    "options": [
+      {
+        "text": "A golden tiger",
+        "correct": false
+      },
+      {
+        "text": "A magical golden deer (Maricha in disguise)",
+        "correct": true
+      },
+      {
+        "text": "A golden peacock",
+        "correct": false
+      },
+      {
+        "text": "A golden serpent",
+        "correct": false
+      }
+    ],
+    "explanation": "The demon Maricha assumed the form of an enchanting golden spotted deer with jewel-tipped antlers to deceive them.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "Which sage dictated the great epic Mahabharata, and who served as the dedicated divine scribe writing it down?",
+    "options": [
+      {
+        "text": "Sage Valmiki dictated to Sage Narada",
+        "correct": false
+      },
+      {
+        "text": "Sage Vyasa dictated to Sri Ganesha",
+        "correct": true
+      },
+      {
+        "text": "Sage Vasishtha dictated to King Janaka",
+        "correct": false
+      },
+      {
+        "text": "Sage Vishwamitra dictated to Arjuna",
+        "correct": false
+      }
+    ],
+    "explanation": "Sage Krishna Dvaipayana (Vyasa) composed the 100,000-verse epic, and Sri Ganesha wrote it down without pause using his broken tusk.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Sri Ganesha",
+      "subItem": "ganesha"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "On which historic battlefield did the 18-day great war between the Pandavas and Kauravas take place?",
+    "options": [
+      {
+        "text": "Panipat",
+        "correct": false
+      },
+      {
+        "text": "Kurukshetra",
+        "correct": true
+      },
+      {
+        "text": "Hastinapura",
+        "correct": false
+      },
+      {
+        "text": "Indraprastha",
+        "correct": false
+      }
+    ],
+    "explanation": "Kurukshetra (in modern Haryana), also revered as the field of righteousness (Dharmakshetra), was the sacred site of the epic battle.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Bhagavad Gita",
+    "question": "How many chapters and approximately how many verses comprise the sacred dialogue of the Bhagavad Gita?",
+    "options": [
+      {
+        "text": "12 chapters, 500 verses",
+        "correct": false
+      },
+      {
+        "text": "18 chapters, 700 verses",
+        "correct": true
+      },
+      {
+        "text": "24 chapters, 1000 verses",
+        "correct": false
+      },
+      {
+        "text": "10 chapters, 400 verses",
+        "correct": false
+      }
+    ],
+    "explanation": "The Bhagavad Gita consists of 18 chapters and 700 verses situated in the Bhishma Parva of the Mahabharata.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Bhagavad Gita",
+    "question": "What is the famous philosophical teaching of Bhagavad Gita 2.47 regarding our daily duties and actions?",
+    "options": [
+      {
+        "text": "Demand the reward before beginning work",
+        "correct": false
+      },
+      {
+        "text": "You have a right to your duty, but not entitlement to its fruits (Nishkama Karma)",
+        "correct": true
+      },
+      {
+        "text": "Never attempt any action unless success is 100% guaranteed",
+        "correct": false
+      },
+      {
+        "text": "Leave all work undone because life is an illusion",
+        "correct": false
+      }
+    ],
+    "explanation": "'Karmany evadhikaras te ma phaleshu kadachana' teaches selfless, dedicated effort without letting anxiety over outcomes paralyze the mind.",
+    "sourceLocation": {
+      "tool": "shlokasTool",
+      "label": "Shlokas, Mantras & Bhajans • Bhagavad Gita 2.47 & 2.70"
+    }
+  },
+  {
+    "category": "Bhagavad Gita",
+    "question": "In Bhagavad Gita 2.70, what natural phenomenon is used to describe a mind that remains completely still amidst desires?",
+    "options": [
+      {
+        "text": "A flickering candle flame in wind",
+        "correct": false
+      },
+      {
+        "text": "The vast ocean that stays undisturbed despite rivers pouring in",
+        "correct": true
+      },
+      {
+        "text": "A rushing mountain torrent",
+        "correct": false
+      },
+      {
+        "text": "A sand dune shifting in a storm",
+        "correct": false
+      }
+    ],
+    "explanation": "Just as the ocean remains deep, full, and steady even as numerous rushing rivers enter it, the wise sage remains peaceful amidst sensory inputs.",
+    "sourceLocation": {
+      "tool": "shlokasTool",
+      "label": "Shlokas, Mantras & Bhajans • Bhagavad Gita 2.47 & 2.70"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "What was the celebrated name of Arjuna's celestial divine bow, gifted to him by the fire-god Agni?",
+    "options": [
+      {
+        "text": "Pinaka",
+        "correct": false
+      },
+      {
+        "text": "Gandiva",
+        "correct": true
+      },
+      {
+        "text": "Sharanga",
+        "correct": false
+      },
+      {
+        "text": "Kodanda",
+        "correct": false
+      }
+    ],
+    "explanation": "Gandiva was the invincible celestial bow that produced a sound like thunder when strung by Arjuna.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "Why did Bhishma take his famous unbreakable vow of lifelong celibacy and renunciation of the throne?",
+    "options": [
+      {
+        "text": "To study with the gods in heaven",
+        "correct": false
+      },
+      {
+        "text": "To enable his father Shantanu to marry Satyavati happily",
+        "correct": true
+      },
+      {
+        "text": "To become the commander of the army",
+        "correct": false
+      },
+      {
+        "text": "Because he lost a royal duel",
+        "correct": false
+      }
+    ],
+    "explanation": "Devavrata took the terrible vow ('Bhishma Pratigna') so Satyavati's father would agree to her wedding with King Shantanu, earning him the name Bhishma.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "Who was granted divine spiritual vision (Divya Drishti) by Sage Vyasa to narrate the battlefield events live to blind King Dhritarashtra?",
+    "options": [
+      {
+        "text": "Vidura",
+        "correct": false
+      },
+      {
+        "text": "Sanjaya",
+        "correct": true
+      },
+      {
+        "text": "Kripacharya",
+        "correct": false
+      },
+      {
+        "text": "Ashwatthama",
+        "correct": false
+      }
+    ],
+    "explanation": "Sanjaya, the royal charioteer and counselor, received divine sight to perceive and report all occurrences and conversations on Kurukshetra.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "Which Pandava was celebrated for his unrivaled mastery of the heavy mace (Gada) and immense physical strength?",
+    "options": [
+      {
+        "text": "Yudhishthira",
+        "correct": false
+      },
+      {
+        "text": "Bhima",
+        "correct": true
+      },
+      {
+        "text": "Arjuna",
+        "correct": false
+      },
+      {
+        "text": "Nakula",
+        "correct": false
+      }
+    ],
+    "explanation": "Bhima, the son of the wind-god Vayu, possessed the strength of ten thousand elephants and was a supreme master of mace combat.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "What divine birthright armor and earrings (Kavacha and Kundala) did Karna generously give away to Indra in disguise?",
+    "options": [
+      {
+        "text": "Silver shield and iron helmet",
+        "correct": false
+      },
+      {
+        "text": "Impenetrable golden armor attached to his body from birth",
+        "correct": true
+      },
+      {
+        "text": "A jeweled sword",
+        "correct": false
+      },
+      {
+        "text": "A celestial chariot",
+        "correct": false
+      }
+    ],
+    "explanation": "Karna was renowned as Danaveera (hero of charity). Even knowing Indra had come in disguise to protect Arjuna, Karna cut off his armor without hesitation.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "What complex multi-tier circular military labyrinth was young warrior Abhimanyu trapped inside on the 13th day of the war?",
+    "options": [
+      {
+        "text": "Krauncha Vyuha",
+        "correct": false
+      },
+      {
+        "text": "Chakravyuha (Padmavvhuha)",
+        "correct": true
+      },
+      {
+        "text": "Sarvatobhadra Vyuha",
+        "correct": false
+      },
+      {
+        "text": "Makara Vyuha",
+        "correct": false
+      }
+    ],
+    "explanation": "Abhimanyu knew how to penetrate the wheel formation (Chakravyuha) from his mother Subhadra's womb, but had not learned how to exit it.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "When Dronacharya asked the royal princes what they saw while aiming at a wooden toy bird in a tree, what did Arjuna reply?",
+    "options": [
+      {
+        "text": "The tree branches, fruit, and clouds",
+        "correct": false
+      },
+      {
+        "text": "I see only the eye of the bird, nothing else",
+        "correct": true
+      },
+      {
+        "text": "The blue feathers of the bird",
+        "correct": false
+      },
+      {
+        "text": "My brothers standing next to me",
+        "correct": false
+      }
+    ],
+    "explanation": "Arjuna demonstrated total Ekagrata (single-pointed concentration), proving that eliminating irrelevant visual data is key to mastery.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "Which elder queen mother gave birth to Karna before marriage and later revealed the truth on the eve of the Kurukshetra war?",
+    "options": [
+      {
+        "text": "Gandhari",
+        "correct": false
+      },
+      {
+        "text": "Kunti",
+        "correct": true
+      },
+      {
+        "text": "Madri",
+        "correct": false
+      },
+      {
+        "text": "Satyavati",
+        "correct": false
+      }
+    ],
+    "explanation": "Kunti was blessed with a mantra by Sage Durvasa that invoked Surya Deva, resulting in the birth of the radiant child Karna.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Bhagavad Gita",
+    "question": "What cosmic revelation did Lord Krishna show Arjuna in Chapter 11 of the Bhagavad Gita upon request?",
+    "options": [
+      {
+        "text": "The garden of heavenly Gandharvas",
+        "correct": false
+      },
+      {
+        "text": "Vishwaroopa (The Universal Cosmic Form containing all creation and time)",
+        "correct": true
+      },
+      {
+        "text": "A golden kingdom in the clouds",
+        "correct": false
+      },
+      {
+        "text": "A vision of the future city of Dwarka",
+        "correct": false
+      }
+    ],
+    "explanation": "Krishna bestowed divine vision on Arjuna to reveal the Vishwaroopa—a staggering vision encompassing millions of suns, all gods, and all time.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Mahabharata",
+    "question": "For how many years were the Pandavas forced into forest exile followed by one year of incognito concealment (Agnyatavasa)?",
+    "options": [
+      {
+        "text": "10 years forest + 2 years incognito",
+        "correct": false
+      },
+      {
+        "text": "12 years forest + 1 year incognito (13 years total)",
+        "correct": true
+      },
+      {
+        "text": "14 years forest + 1 year incognito",
+        "correct": false
+      },
+      {
+        "text": "7 years forest + 1 year incognito",
+        "correct": false
+      }
+    ],
+    "explanation": "After the loaded game of dice, the terms were 12 years in the forest and the 13th year living in disguise in the kingdom of Matsya (Virata).",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Mahabharata (Kurukshetra)"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "Which celestial river is depicted emerging serenely from the crown of Lord Shiva's matted locks (Jata)?",
+    "options": [
+      {
+        "text": "Yamuna",
+        "correct": false
+      },
+      {
+        "text": "Ganga",
+        "correct": true
+      },
+      {
+        "text": "Godavari",
+        "correct": false
+      },
+      {
+        "text": "Kaveri",
+        "correct": false
+      }
+    ],
+    "explanation": "Shiva caught the torrential descent of Mother Ganga in his matted hair to cushion the earth from her overwhelming velocity, releasing her in gentle streams.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What does the third eye (Trinetra) on Lord Shiva's forehead symbolize?",
+    "options": [
+      {
+        "text": "Physical sight in total darkness",
+        "correct": false
+      },
+      {
+        "text": "The eye of inner spiritual wisdom (Jnana) that burns delusion",
+        "correct": true
+      },
+      {
+        "text": "A decorative jewel",
+        "correct": false
+      },
+      {
+        "text": "A sign of angry sleep",
+        "correct": false
+      }
+    ],
+    "explanation": "The third eye represents intuitive spiritual perception. When opened, it burns through Maya (worldly illusion) and destroys ignorance.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What is the hourglass-shaped percussion instrument held by Lord Shiva that represents the primordial cosmic sound (Nada)?",
+    "options": [
+      {
+        "text": "Mridangam",
+        "correct": false
+      },
+      {
+        "text": "Damru",
+        "correct": true
+      },
+      {
+        "text": "Tabla",
+        "correct": false
+      },
+      {
+        "text": "Ghatam",
+        "correct": false
+      }
+    ],
+    "explanation": "The Damru produces the primordial acoustic pulsation that orchestrates the cosmic cycle and gave rise to the 14 Maheshwara Sutras of Sanskrit grammar.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What is the three-pronged sacred staff held by Lord Shiva that represents mastery over the three Gunas (Sattva, Rajas, Tamas)?",
+    "options": [
+      {
+        "text": "Trishula",
+        "correct": true
+      },
+      {
+        "text": "Vajra",
+        "correct": false
+      },
+      {
+        "text": "Gada",
+        "correct": false
+      },
+      {
+        "text": "Vel",
+        "correct": false
+      }
+    ],
+    "explanation": "The Trishula (trident) symbolizes mastery over the three qualities of nature, the threefold divisions of time, and the three channels of Prana (Ida, Pingala, Sushumna).",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What does the humble little mouse (Mooshika) stationed beside Sri Ganesha represent?",
+    "options": [
+      {
+        "text": "Fear of cats",
+        "correct": false
+      },
+      {
+        "text": "Restless sensory desires and ego mastered by higher intellect",
+        "correct": true
+      },
+      {
+        "text": "A pet to play with",
+        "correct": false
+      },
+      {
+        "text": "The speed of running animals",
+        "correct": false
+      }
+    ],
+    "explanation": "The mouse symbolizes wandering, restless desires that gnaw in dark corners. By riding the mouse, Ganesha shows that desires must be guided by wisdom.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Sri Ganesha",
+      "subItem": "ganesha"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "Why did Sri Ganesha break off his own tusk (Ekadanta)?",
+    "options": [
+      {
+        "text": "He lost it in a wrestling match",
+        "correct": false
+      },
+      {
+        "text": "To use as a writing stylus to record the Mahabharata without pause",
+        "correct": true
+      },
+      {
+        "text": "To carve a sculpture",
+        "correct": false
+      },
+      {
+        "text": "It broke accidentally on a rock",
+        "correct": false
+      }
+    ],
+    "explanation": "Ganesha sacrificed his physical tusk to ensure the unceasing flow of writing when his stylus broke as Sage Vyasa dictated the Mahabharata.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Sri Ganesha",
+      "subItem": "ganesha"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "Which stringed instrument does Devi Saraswati hold across her lap to represent cultural creativity and mental harmony?",
+    "options": [
+      {
+        "text": "Sitar",
+        "correct": false
+      },
+      {
+        "text": "Veena",
+        "correct": true
+      },
+      {
+        "text": "Tanpura",
+        "correct": false
+      },
+      {
+        "text": "Sarod",
+        "correct": false
+      }
+    ],
+    "explanation": "The Veena represents Nada Brahma (cosmic music) and reminds us that intellect and feelings must be tuned into serene balance to produce harmony.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Devi Saraswati",
+      "subItem": "saraswati"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "Which sacred bird serves as the vehicle (Vahana) of Devi Saraswati and Lord Brahma, symbolizing discernment (Viveka)?",
+    "options": [
+      {
+        "text": "Garuda (Eagle)",
+        "correct": false
+      },
+      {
+        "text": "Hamsa (The Swan)",
+        "correct": true
+      },
+      {
+        "text": "Mayura (The Peacock)",
+        "correct": false
+      },
+      {
+        "text": "Shuka (The Parrot)",
+        "correct": false
+      }
+    ],
+    "explanation": "The Hamsa possesses the legendary power of Neera-Ksheera Viveka—separating milk from water—symbolizing the seeker's power to extract truth from illusion.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Devi Saraswati",
+      "subItem": "saraswati"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What is the spinning, razor-sharp discus held in the upper right hand of Lord Vishnu called?",
+    "options": [
+      {
+        "text": "Kaumodaki",
+        "correct": false
+      },
+      {
+        "text": "Sudarshana Chakra",
+        "correct": true
+      },
+      {
+        "text": "Dharma Chakra",
+        "correct": false
+      },
+      {
+        "text": "Surya Mandala",
+        "correct": false
+      }
+    ],
+    "explanation": "The Sudarshana Chakra represents the wheel of cosmic time and truth, cutting through the illusions of ignorance and protecting Dharma.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Vishnu",
+      "subItem": "vishnu"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What is the sacred spiral conch shell held by Lord Vishnu called?",
+    "options": [
+      {
+        "text": "Panchajanya",
+        "correct": true
+      },
+      {
+        "text": "Devadatta",
+        "correct": false
+      },
+      {
+        "text": "Anantavijaya",
+        "correct": false
+      },
+      {
+        "text": "Sughosha",
+        "correct": false
+      }
+    ],
+    "explanation": "The Panchajanya Shankha produces the primordial vibration (Om) that awakens spiritual awareness and dispels negative vibrations.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Vishnu",
+      "subItem": "vishnu"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What divine mace does Lord Vishnu hold in his hand to symbolize mental and physical strength?",
+    "options": [
+      {
+        "text": "Pinaka",
+        "correct": false
+      },
+      {
+        "text": "Kaumodaki",
+        "correct": true
+      },
+      {
+        "text": "Vajra",
+        "correct": false
+      },
+      {
+        "text": "Khatvanga",
+        "correct": false
+      }
+    ],
+    "explanation": "The golden mace Kaumodaki symbolizes supreme intellect, physical discipline, and the power to crush arrogance and delusion.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Sri Ganesha",
+      "subItem": "ganesha"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "Why is the lotus flower (Padma) the primary symbol of purity across Indian sacred iconography?",
+    "options": [
+      {
+        "text": "It grows only on snowy mountains",
+        "correct": false
+      },
+      {
+        "text": "It roots in murky mud yet blooms spotless and pristine above water",
+        "correct": true
+      },
+      {
+        "text": "It is the largest flower in the forest",
+        "correct": false
+      },
+      {
+        "text": "It changes color every hour",
+        "correct": false
+      }
+    ],
+    "explanation": "The lotus represents detached spiritual purity: living actively in the material world without letting its murky attachments stain the heart.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Heritage Lessons & Epics"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "How many heads does Lord Brahma possess in traditional sacred iconography, facing the cardinal directions?",
+    "options": [
+      {
+        "text": "One head",
+        "correct": false
+      },
+      {
+        "text": "Four heads (Chaturmukha)",
+        "correct": true
+      },
+      {
+        "text": "Three heads",
+        "correct": false
+      },
+      {
+        "text": "Five heads",
+        "correct": false
+      }
+    ],
+    "explanation": "Brahma's four heads represent the four Vedas (Rig, Sama, Yajur, Atharva) and universal vision spanning all directions of creation.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Brahma",
+      "subItem": "brahma"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What sacred water vessel does Lord Brahma hold in his hand containing the causal waters of creation?",
+    "options": [
+      {
+        "text": "Kalasha",
+        "correct": false
+      },
+      {
+        "text": "Kamandalu",
+        "correct": true
+      },
+      {
+        "text": "Kumbha",
+        "correct": false
+      },
+      {
+        "text": "Lota",
+        "correct": false
+      }
+    ],
+    "explanation": "The ascetic's water pot (Kamandalu) symbolizes the primordial seed-waters of cosmic potential from which manifested life springs.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Brahma",
+      "subItem": "brahma"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What radiant jewel adorns the chest of Lord Vishnu, representing pure, untainted consciousness?",
+    "options": [
+      {
+        "text": "Syamantaka",
+        "correct": false
+      },
+      {
+        "text": "Kaustubha",
+        "correct": true
+      },
+      {
+        "text": "Chintamani",
+        "correct": false
+      },
+      {
+        "text": "Navaratna",
+        "correct": false
+      }
+    ],
+    "explanation": "The Kaustubha gem emerged during the churning of the ocean (Samudra Manthana) and rests on Vishnu's chest as a symbol of pure soul-awareness.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Vishnu",
+      "subItem": "vishnu"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What is the name of the cosmic multi-hooded serpent on which Lord Vishnu rests in the celestial milk ocean?",
+    "options": [
+      {
+        "text": "Vasuki",
+        "correct": false
+      },
+      {
+        "text": "Sheshanaga (Ananta)",
+        "correct": true
+      },
+      {
+        "text": "Takshaka",
+        "correct": false
+      },
+      {
+        "text": "Kaliya",
+        "correct": false
+      }
+    ],
+    "explanation": "Ananta Shesha ('the Endless Remainder') supports Lord Vishnu between cosmic cycles, representing timelessness and infinite space.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Vishnu",
+      "subItem": "vishnu"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What is the hand gesture (Mudra) where the open palm faces forward with fingers raised, signaling protection and blessing?",
+    "options": [
+      {
+        "text": "Varada Mudra",
+        "correct": false
+      },
+      {
+        "text": "Abhaya Mudra",
+        "correct": true
+      },
+      {
+        "text": "Dhyana Mudra",
+        "correct": false
+      },
+      {
+        "text": "Chin Mudra",
+        "correct": false
+      }
+    ],
+    "explanation": "Abhaya Mudra literally means 'fear not' (A-bhaya). It is the universal gesture of spiritual reassurance, refuge, and protection.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What sacred leaf with three leaflets is considered especially sacred when offered to Lord Shiva?",
+    "options": [
+      {
+        "text": "Tulsi leaf",
+        "correct": false
+      },
+      {
+        "text": "Bilva (Bael) leaf",
+        "correct": true
+      },
+      {
+        "text": "Neem leaf",
+        "correct": false
+      },
+      {
+        "text": "Ashoka leaf",
+        "correct": false
+      }
+    ],
+    "explanation": "The trifoliate Bilva leaf symbolizes the three eyes of Shiva, the three Gunas, and the Trishula, cooling the fiery lingam during worship.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What does the sweet Modak held in Sri Ganesha's palm signify?",
+    "options": [
+      {
+        "text": "A rich dessert for eating fast",
+        "correct": false
+      },
+      {
+        "text": "The sweet supreme bliss (Ananda) of self-realization and virtuous living",
+        "correct": true
+      },
+      {
+        "text": "A toy ball",
+        "correct": false
+      },
+      {
+        "text": "A gold coin",
+        "correct": false
+      }
+    ],
+    "explanation": "The modak's outer plain flour shell encloses sweet coconut and jaggery within, representing the sweet spiritual bliss hidden within the human form.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Sri Ganesha",
+      "subItem": "ganesha"
+    }
+  },
+  {
+    "category": "Deities & Symbols",
+    "question": "What sacred green aromatic herb is held in utmost reverence and offered in Vishnu worship?",
+    "options": [
+      {
+        "text": "Durva grass",
+        "correct": false
+      },
+      {
+        "text": "Tulsi (Holy Basil)",
+        "correct": true
+      },
+      {
+        "text": "Bilva",
+        "correct": false
+      },
+      {
+        "text": "Parijata",
+        "correct": false
+      }
+    ],
+    "explanation": "Tulsi represents auspiciousness, physical health, and boundless devotion; no offering to Lord Vishnu is considered complete without a Tulsi leaf.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Vishnu",
+      "subItem": "vishnu"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "On the dark moon night (Amavasya) of Diwali, which deity is primarily worshipped to welcome light and auspicious prosperity?",
+    "options": [
+      {
+        "text": "Devi Saraswati",
+        "correct": false
+      },
+      {
+        "text": "Devi Lakshmi alongside Sri Ganesha",
+        "correct": true
+      },
+      {
+        "text": "Lord Indra",
+        "correct": false
+      },
+      {
+        "text": "Lord Kartikeya",
+        "correct": false
+      }
+    ],
+    "explanation": "Families clean homes and light clay diyas to welcome Devi Lakshmi (goddess of noble wealth) and Sri Ganesha (remover of obstacles).",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Sri Ganesha",
+      "subItem": "ganesha"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What sacred bonfire is lit on the eve of Holi to symbolize the destruction of negativity and preservation of faith?",
+    "options": [
+      {
+        "text": "Agni Pariksha",
+        "correct": false
+      },
+      {
+        "text": "Holika Dahan",
+        "correct": true
+      },
+      {
+        "text": "Kama Dahanam",
+        "correct": false
+      },
+      {
+        "text": "Lohri",
+        "correct": false
+      }
+    ],
+    "explanation": "Holika Dahan commemorates the miracle where Prahlada survived the blazing pyre through unwavering devotion, while Holika was consumed.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Holi"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "During which grand festival do communities in Maharashtra build human pyramids to reach and break curd pots suspended in the air?",
+    "options": [
+      {
+        "text": "Diwali",
+        "correct": false
+      },
+      {
+        "text": "Dahi Handi (Krishna Janmashtami)",
+        "correct": true
+      },
+      {
+        "text": "Ganesh Chaturthi",
+        "correct": false
+      },
+      {
+        "text": "Holi",
+        "correct": false
+      }
+    ],
+    "explanation": "Dahi Handi reenacts young Krishna and his cowherd companions forming playful human ladders to reach hanging pots of fresh butter and yogurt.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Krishna Janmashtami"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "How many nights is the festival of Navratri celebrated to honor the nine cosmic manifestations of Devi Durga (Navadurga)?",
+    "options": [
+      {
+        "text": "5 nights",
+        "correct": false
+      },
+      {
+        "text": "9 nights followed by Vijayadashami on the 10th day",
+        "correct": true
+      },
+      {
+        "text": "7 nights",
+        "correct": false
+      },
+      {
+        "text": "12 nights",
+        "correct": false
+      }
+    ],
+    "explanation": "Navratri ('nine nights') honors the divine feminine Shakti culminating on the 10th day, Dussehra/Vijayadashami, celebrating the victory of good over evil.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Devi Durga",
+      "subItem": "durga"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What special ritual is performed on the ninth day of Navratri in South India and Bengal, consecrating books, instruments, and work tools?",
+    "options": [
+      {
+        "text": "Holika Puja",
+        "correct": false
+      },
+      {
+        "text": "Ayudha Puja & Saraswati Puja",
+        "correct": true
+      },
+      {
+        "text": "Govardhan Puja",
+        "correct": false
+      },
+      {
+        "text": "Tulsi Vivah",
+        "correct": false
+      }
+    ],
+    "explanation": "Ayudha Puja honors one's tools of trade, books, pens, vehicles, and craft, viewing labor and learning as sacred acts of worship.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Navratri & Durga Puja"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What special offering consisting of 21 blades of fresh grass is traditional during Ganesh Chaturthi worship?",
+    "options": [
+      {
+        "text": "Bilva leaves",
+        "correct": false
+      },
+      {
+        "text": "Durva grass (Durvankura)",
+        "correct": true
+      },
+      {
+        "text": "Tulsi leaves",
+        "correct": false
+      },
+      {
+        "text": "Neem sprigs",
+        "correct": false
+      }
+    ],
+    "explanation": "Offering 21 blades of Durva grass cools the fiery inner heat and symbolizes resilience and regeneration.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Ganesh Chaturthi"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What is the meaning of the traditional immersion ritual (Visarjan) of clay Ganesha murtis in water bodies?",
+    "options": [
+      {
+        "text": "Disposing of an old object",
+        "correct": false
+      },
+      {
+        "text": "Form dissolves back into the formless ocean, teaching detachment and cosmic cycles",
+        "correct": true
+      },
+      {
+        "text": "Cooling off after a hot summer",
+        "correct": false
+      },
+      {
+        "text": "A signal to begin agricultural planting",
+        "correct": false
+      }
+    ],
+    "explanation": "Visarjan teaches that all created forms come from Mother Earth, reside with us in loving devotion, and return to the formless cosmic ocean.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Sri Ganesha",
+      "subItem": "ganesha"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What sacred thread is tied around the wrist during Raksha Bandhan as a mutual pledge of love, honor, and protection?",
+    "options": [
+      {
+        "text": "Yajnopavita",
+        "correct": false
+      },
+      {
+        "text": "Rakhi (Raksha Sutra)",
+        "correct": true
+      },
+      {
+        "text": "Mauli",
+        "correct": false
+      },
+      {
+        "text": "Kankan",
+        "correct": false
+      }
+    ],
+    "explanation": "The Rakhi is an auspicious thread tied on the wrist accompanied by prayers for longevity, well-being, and mutual lifelong care.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Raksha Bandhan"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "Which astronomical event is celebrated during Makar Sankranti across India?",
+    "options": [
+      {
+        "text": "The lunar eclipse",
+        "correct": false
+      },
+      {
+        "text": "The Sun's transition into the zodiac of Makara (Capricorn), starting Uttarayana",
+        "correct": true
+      },
+      {
+        "text": "The arrival of the monsoon winds",
+        "correct": false
+      },
+      {
+        "text": "The shortest night of the year",
+        "correct": false
+      }
+    ],
+    "explanation": "Makar Sankranti marks the Sun entering the sign of Makara, signaling the end of winter, lengthening daylight, and the spring harvest.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Pongal & Makar Sankranti"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What traditional sweet made of sesame seeds and jaggery is distributed during Sankranti in Maharashtra with words of sweet speech?",
+    "options": [
+      {
+        "text": "Laddoo",
+        "correct": false
+      },
+      {
+        "text": "Til-gul ('Til-gul ghya, god-god bola')",
+        "correct": true
+      },
+      {
+        "text": "Jalebi",
+        "correct": false
+      },
+      {
+        "text": "Peda",
+        "correct": false
+      }
+    ],
+    "explanation": "'Til-gul ghya, god-god bola' means 'Accept this sesame and jaggery sweet, and speak only sweet, kind words,' resolving past grievances.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Pongal & Makar Sankranti"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "During which grand night do devotees maintain an all-night wakeful vigil (Jagaran) and fast in silent meditation?",
+    "options": [
+      {
+        "text": "Sharad Purnima",
+        "correct": false
+      },
+      {
+        "text": "Maha Shivaratri",
+        "correct": true
+      },
+      {
+        "text": "Guru Purnima",
+        "correct": false
+      },
+      {
+        "text": "Kartik Purnima",
+        "correct": false
+      }
+    ],
+    "explanation": "Maha Shivaratri ('the Great Night of Shiva') is dedicated to all-night meditation, chanting, and Abhishekam to transcend mental restlessness.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What is the ceremonial bathing of the Shiva Lingam with milk, honey, yogurt, ghee, and water called?",
+    "options": [
+      {
+        "text": "Aarti",
+        "correct": false
+      },
+      {
+        "text": "Abhishekam",
+        "correct": true
+      },
+      {
+        "text": "Havan",
+        "correct": false
+      },
+      {
+        "text": "Pradakshina",
+        "correct": false
+      }
+    ],
+    "explanation": "Abhishekam is the continuous rhythmic pouring of sacred cool substances over the Lingam while chanting the Sri Rudram to focus the mind.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What step-like exhibition of traditional clay figurines and deities is arranged in South Indian homes during Navratri?",
+    "options": [
+      {
+        "text": "Rangoli",
+        "correct": false
+      },
+      {
+        "text": "Bommala Koluvu (Golu)",
+        "correct": true
+      },
+      {
+        "text": "Torana",
+        "correct": false
+      },
+      {
+        "text": "Pandal",
+        "correct": false
+      }
+    ],
+    "explanation": "Golu (or Bommai Kolu) displays dolls of deities, sages, and civic life on odd-numbered steps, depicting cosmic evolution and family storytelling.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Navratri & Durga Puja"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "At what time of day or night was Bhagavan Sri Krishna born in the prison cell of Kamsa in Mathura?",
+    "options": [
+      {
+        "text": "At sunrise",
+        "correct": false
+      },
+      {
+        "text": "Exactly at midnight on the Ashtami Tithi of Bhadrapada",
+        "correct": true
+      },
+      {
+        "text": "At midday",
+        "correct": false
+      },
+      {
+        "text": "At sunset",
+        "correct": false
+      }
+    ],
+    "explanation": "Sri Krishna's midnight birth under the Rohini Nakshatra is commemorated with midnight bells, conch sounds, and prayers on Janmashtami.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Krishna Janmashtami"
+    }
+  },
+  {
+    "category": "Festivals & Traditions",
+    "question": "What festive greeting and boiled sweet rice pot ritual is shouted when the milk boils over the pot on Pongal morning?",
+    "options": [
+      {
+        "text": "'Har Har Mahadev!'",
+        "correct": false
+      },
+      {
+        "text": "'Pongalo Pongal!' (May abundance overflow!)",
+        "correct": true
+      },
+      {
+        "text": "'Jai Sri Ram!'",
+        "correct": false
+      },
+      {
+        "text": "'Radhe Radhe!'",
+        "correct": false
+      }
+    ],
+    "explanation": "As the fresh harvest rice and milk froth over the clay pot facing the rising sun, families shout 'Pongalo Pongal!' rejoicing in prosperity.",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions • Pongal & Makar Sankranti"
+    }
+  },
+  {
+    "category": "Sacred Mantras",
+    "question": "In which ancient Vedic Samhita is the luminous Gayatri Mantra originally preserved?",
+    "options": [
+      {
+        "text": "Atharvaveda",
+        "correct": false
+      },
+      {
+        "text": "Rigveda (Mandala 3, Sukta 62)",
+        "correct": true
+      },
+      {
+        "text": "Samaveda",
+        "correct": false
+      },
+      {
+        "text": "Yajurveda",
+        "correct": false
+      }
+    ],
+    "explanation": "Revealed through Brahmarshi Vishwamitra, the Gayatri Mantra is in the 3rd Mandala of the Rigveda, invoking Savitr (the divine solar radiance).",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Brahma",
+      "subItem": "brahma"
+    }
+  },
+  {
+    "category": "Sacred Mantras",
+    "question": "What is the core prayer expressed in the concluding line of the Gayatri Mantra: 'dhiyo yo naḥ pracodayāt'?",
+    "options": [
+      {
+        "text": "May we defeat our earthly competitors",
+        "correct": false
+      },
+      {
+        "text": "May that divine light awaken and inspire our intellect toward noble wisdom",
+        "correct": true
+      },
+      {
+        "text": "May we acquire gold and jewels",
+        "correct": false
+      },
+      {
+        "text": "May it rain without stopping",
+        "correct": false
+      }
+    ],
+    "explanation": "'Dhiyo yo nah prachodayat' prays that the Supreme Light illuminate our discernment (Dhi), inspiring righteous thoughts and actions.",
+    "sourceLocation": {
+      "tool": "shlokasTool",
+      "label": "Shlokas, Mantras & Bhajans • Sacred Chants"
+    }
+  },
+  {
+    "category": "Sacred Mantras",
+    "question": "In the Maha Mrityunjaya Mantra, what fruit naturally detaches from its vine to symbolize peaceful liberation from mortality?",
+    "options": [
+      {
+        "text": "A ripe mango (Amra)",
+        "correct": false
+      },
+      {
+        "text": "A ripe cucumber or melon (Urvaruka)",
+        "correct": true
+      },
+      {
+        "text": "A coconut (Narikel)",
+        "correct": false
+      },
+      {
+        "text": "A banana (Kadali)",
+        "correct": false
+      }
+    ],
+    "explanation": "'Urvarukam iva bandhanat mrityor mukshiya ma'mritat' compares liberation to a ripe melon falling effortlessly from its stem when mature.",
+    "sourceLocation": {
+      "tool": "shlokasTool",
+      "label": "Shlokas, Mantras & Bhajans • Sacred Chants"
+    }
+  },
+  {
+    "category": "Sacred Mantras",
+    "question": "What is the five-syllable sacred Shiva mantra known as the Panchakshari?",
+    "options": [
+      {
+        "text": "Om Namo Narayanaya",
+        "correct": false
+      },
+      {
+        "text": "Om Namah Shivaya",
+        "correct": true
+      },
+      {
+        "text": "Hare Krishna Hare Rama",
+        "correct": false
+      },
+      {
+        "text": "Om Gam Ganapataye Namaha",
+        "correct": false
+      }
+    ],
+    "explanation": "Na-Ma-Shi-Va-Ya represents the five primordial elements (earth, water, fire, air, and space) harmonized in divine consciousness.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Sacred Mantras",
+    "question": "What does repeating 'Shanti' three times at the conclusion of Vedic prayers specifically address?",
+    "options": [
+      {
+        "text": "Three times makes it louder",
+        "correct": false
+      },
+      {
+        "text": "Peace across the three spheres of suffering: Adhyatmika (inner), Adhibhautika (social/nature), and Adhidaivika (cosmic forces)",
+        "correct": true
+      },
+      {
+        "text": "Past, present, and future days only",
+        "correct": false
+      },
+      {
+        "text": "Morning, noon, and night meals",
+        "correct": false
+      }
+    ],
+    "explanation": "The threefold Shanti invokes universal peace to pacify internal mental disturbances, external interpersonal conflicts, and cosmic environmental forces.",
+    "sourceLocation": {
+      "tool": "shlokasTool",
+      "label": "Shlokas, Mantras & Bhajans • Sacred Chants"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "From which Sanskrit verbal root is the word 'Dharma' derived, meaning to support, uphold, or sustain?",
+    "options": [
+      {
+        "text": "Kr (to do)",
+        "correct": false
+      },
+      {
+        "text": "Dhr (to uphold, sustain)",
+        "correct": true
+      },
+      {
+        "text": "Vid (to know)",
+        "correct": false
+      },
+      {
+        "text": "Gam (to go)",
+        "correct": false
+      },
+      {
+        "text": "Bhu (to be)",
+        "correct": false
+      }
+    ],
+    "explanation": "From 'Dhri Dharane' ('that which holds together'). Dharma is the ethical and cosmic foundation that sustains social harmony and universal order.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What is the natural law of cause and effect governed by intentional human action called in Indian philosophy?",
+    "options": [
+      {
+        "text": "Moksha",
+        "correct": false
+      },
+      {
+        "text": "Karma",
+        "correct": true
+      },
+      {
+        "text": "Samsara",
+        "correct": false
+      },
+      {
+        "text": "Maya",
+        "correct": false
+      }
+    ],
+    "explanation": "From the root 'Kri' (to act). Karma teaches that our conscious intentions and deeds plant seeds (Samskaras) that shape our character and future.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What does the cardinal virtue of 'Ahimsa' specifically command across thought, word, and deed?",
+    "options": [
+      {
+        "text": "Complete silence at all times",
+        "correct": false
+      },
+      {
+        "text": "Non-harming, active compassion, and reverence for all living beings",
+        "correct": true
+      },
+      {
+        "text": "Running away from difficult challenges",
+        "correct": false
+      },
+      {
+        "text": "Agreeing with everyone even when they do wrong",
+        "correct": false
+      }
+    ],
+    "explanation": "Ahimsa is the pinnacle of ethical duty (Ahimsa Paramo Dharmah): causing no intentional injury and fostering goodwill toward all existence.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What is the ultimate spiritual liberation from delusion, fear, and the cycle of rebirth (Samsara) called?",
+    "options": [
+      {
+        "text": "Artha",
+        "correct": false
+      },
+      {
+        "text": "Moksha (Mukti)",
+        "correct": true
+      },
+      {
+        "text": "Kama",
+        "correct": false
+      },
+      {
+        "text": "Dharma",
+        "correct": false
+      }
+    ],
+    "explanation": "Moksha is the fourth and highest goal of human life (Purushartha), representing union with the Supreme Self and eternal peace.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What sanctified food offering is blessed during prayer and shared with love among all worshippers equally?",
+    "options": [
+      {
+        "text": "Bhiksha",
+        "correct": false
+      },
+      {
+        "text": "Prasad (Prasada)",
+        "correct": true
+      },
+      {
+        "text": "Naivedya only",
+        "correct": false
+      },
+      {
+        "text": "Annadanam only",
+        "correct": false
+      }
+    ],
+    "explanation": "Prasada literally means 'clarity and divine grace'. Food offered to the Divine with pure love becomes sanctified grace to be shared with all.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Panchatantra (Wit & Wisdom)"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What is the term for selfless service performed without commercial transaction or expectation of personal return?",
+    "options": [
+      {
+        "text": "Vyapara",
+        "correct": false
+      },
+      {
+        "text": "Seva",
+        "correct": true
+      },
+      {
+        "text": "Udyoga",
+        "correct": false
+      },
+      {
+        "text": "Shrama",
+        "correct": false
+      }
+    ],
+    "explanation": "From the root 'Sev' (to attend with devotion). Seva is humble, unselfish service rendered to family, community, animals, and temple.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "According to traditional etymology, what does the syllable 'Gu' and 'Ru' in the word 'Guru' signify?",
+    "options": [
+      {
+        "text": "'Gu' means book, 'Ru' means memory",
+        "correct": false
+      },
+      {
+        "text": "'Gu' means darkness/ignorance, 'Ru' means the dispeller/remover",
+        "correct": true
+      },
+      {
+        "text": "'Gu' means elder, 'Ru' means speaker",
+        "correct": false
+      },
+      {
+        "text": "'Gu' means mountain, 'Ru' means river",
+        "correct": false
+      }
+    ],
+    "explanation": "The Advayataraka Upanishad states: 'Gu' stands for the darkness of worldly ignorance, and 'Ru' stands for the radiant light that dispels it.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What is the traditional decorative geometric floor pattern created at home thresholds using rice flour and mineral colors called?",
+    "options": [
+      {
+        "text": "Mandala",
+        "correct": false
+      },
+      {
+        "text": "Rangoli (Kolam / Alpana)",
+        "correct": true
+      },
+      {
+        "text": "Torana",
+        "correct": false
+      },
+      {
+        "text": "Chitra",
+        "correct": false
+      }
+    ],
+    "explanation": "Rangoli (derived from Sanskrit 'Rangavalli') welcomes guests and auspiciousness, while using rice flour feeds birds, ants, and small creatures at the door.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What do the four classical texts known as the Vedas represent in Indian heritage?",
+    "options": [
+      {
+        "text": "Modern law codes",
+        "correct": false
+      },
+      {
+        "text": "The foundational ancient sacred scriptures (Rig, Sama, Yajur, Atharva) preserving oral wisdom",
+        "correct": true
+      },
+      {
+        "text": "Historical diaries of kings",
+        "correct": false
+      },
+      {
+        "text": "Books of geography only",
+        "correct": false
+      }
+    ],
+    "explanation": "From 'Vid' (to know). The four Vedas are the eternal spiritual fountainhead of Hindu philosophy, astronomy, mathematics, poetry, and ritual.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What was the ancient residential learning system where students lived with their teacher in a forest hermitage called?",
+    "options": [
+      {
+        "text": "Pathashala",
+        "correct": false
+      },
+      {
+        "text": "Gurukula",
+        "correct": true
+      },
+      {
+        "text": "Vidyalaya",
+        "correct": false
+      },
+      {
+        "text": "Ashramshala",
+        "correct": false
+      }
+    ],
+    "explanation": "In the Gurukula ('the family of the Guru'), students learned ethics, sciences, martial arts, and meditation alongside household chores as equal family members.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Panchatantra",
+    "question": "Which wise scholar authored the Panchatantra to teach statecraft, ethics, and worldly wisdom (Niti) to three young princes?",
+    "options": [
+      {
+        "text": "Sage Chanakya",
+        "correct": false
+      },
+      {
+        "text": "Pandit Vishnu Sharma",
+        "correct": true
+      },
+      {
+        "text": "Sage Narada",
+        "correct": false
+      },
+      {
+        "text": "Kalidasa",
+        "correct": false
+      }
+    ],
+    "explanation": "Pandit Vishnu Sharma promised King Amarasakti to transform his uninterested sons into wise leaders in six months using interconnected animal fables.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Vishnu",
+      "subItem": "vishnu"
+    }
+  },
+  {
+    "category": "Panchatantra",
+    "question": "In the famous Panchatantra tale of the ferocious lion Bhasuraka, how did the clever little hare defeat the lion?",
+    "options": [
+      {
+        "text": "By fighting him with a sword",
+        "correct": false
+      },
+      {
+        "text": "By leading him to a deep well to see his own angry reflection as a rival",
+        "correct": true
+      },
+      {
+        "text": "By running away across a river",
+        "correct": false
+      },
+      {
+        "text": "By calling a pack of wolves",
+        "correct": false
+      }
+    ],
+    "explanation": "The clever hare tricked the arrogant lion into seeing his own roaring reflection and echo in a well, causing the lion to leap in and perish.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Panchatantra (Wit & Wisdom)"
+    }
+  },
+  {
+    "category": "Panchatantra",
+    "question": "How many principal books (Tantras) make up the classical structure of the Panchatantra?",
+    "options": [
+      {
+        "text": "3 books",
+        "correct": false
+      },
+      {
+        "text": "5 books (Mitra-bheda, Mitra-prapti, Kakolukiyam, Labdhapranasam, Aparikshitakarakam)",
+        "correct": true
+      },
+      {
+        "text": "7 books",
+        "correct": false
+      },
+      {
+        "text": "10 books",
+        "correct": false
+      }
+    ],
+    "explanation": "The Pancha-tantra literally means 'Five Weavings/Strategies': Losing Friends, Winning Friends, Crows and Owls (War), Loss of Gains, and Rash Action.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Panchatantra (Wit & Wisdom)"
+    }
+  },
+  {
+    "category": "Sacred Architecture",
+    "question": "What is the innermost, sacred sanctum sanctorum of a Hindu temple where the main Murti is consecrated called?",
+    "options": [
+      {
+        "text": "Mandapa",
+        "correct": false
+      },
+      {
+        "text": "Garbha Griha (Womb Chamber)",
+        "correct": true
+      },
+      {
+        "text": "Shikhara",
+        "correct": false
+      },
+      {
+        "text": "Prakara",
+        "correct": false
+      }
+    ],
+    "explanation": "The Garbha Griha is the quiet, windowless sanctum stone chamber designed to concentrate spiritual focus on the luminous divine presence.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Heritage Lessons & Epics"
+    }
+  },
+  {
+    "category": "Sacred Architecture",
+    "question": "What is the soaring architectural tower rising majestically above the sanctum in North Indian Nagara style temples called?",
+    "options": [
+      {
+        "text": "Gopuram",
+        "correct": false
+      },
+      {
+        "text": "Shikhara",
+        "correct": true
+      },
+      {
+        "text": "Torana",
+        "correct": false
+      },
+      {
+        "text": "Amalaka only",
+        "correct": false
+      }
+    ],
+    "explanation": "The Shikhara ('mountain peak') curves upward like Mount Kailash or Meru, drawing the viewer's gaze from earthly concerns toward the heavens.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Shiva",
+      "subItem": "shiva"
+    }
+  },
+  {
+    "category": "Sacred Architecture",
+    "question": "What is the grand, ornate entrance gateway tower characteristic of South Indian Dravidian temples called?",
+    "options": [
+      {
+        "text": "Shikhara",
+        "correct": false
+      },
+      {
+        "text": "Gopuram",
+        "correct": true
+      },
+      {
+        "text": "Vimana",
+        "correct": false
+      },
+      {
+        "text": "Antarala",
+        "correct": false
+      }
+    ],
+    "explanation": "A Gopuram is the towering monumental entryway adorned with sculptures of divine lore, signaling that one is entering sacred temple precincts.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Heritage Lessons & Epics"
+    }
+  },
+  {
+    "category": "Vedic Wisdom",
+    "question": "Which philosophical texts, known as the culmination of the Vedas (Vedanta), explore the nature of the soul (Atman) and Brahman?",
+    "options": [
+      {
+        "text": "Samhitas",
+        "correct": false
+      },
+      {
+        "text": "Upanishads",
+        "correct": true
+      },
+      {
+        "text": "Brahmanas",
+        "correct": false
+      },
+      {
+        "text": "Aranyakas",
+        "correct": false
+      }
+    ],
+    "explanation": "The Upanishads ('sitting down near the Guru') explore deep metaphysical inquiries: 'Who am I?', 'What is the universe?', and 'Tat Tvam Asi'.",
+    "sourceLocation": {
+      "tool": "hotspotTool",
+      "label": "Murti Symbol Explorer • Lord Brahma",
+      "subItem": "brahma"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What are the four classical noble aims or goals of human life known as in Hindu heritage?",
+    "options": [
+      {
+        "text": "The four seasons",
+        "correct": false
+      },
+      {
+        "text": "The Purusharthas (Dharma, Artha, Kama, Moksha)",
+        "correct": true
+      },
+      {
+        "text": "The four castes",
+        "correct": false
+      },
+      {
+        "text": "The four directions",
+        "correct": false
+      }
+    ],
+    "explanation": "The Purusharthas outline a balanced life: living ethically (Dharma), acquiring honest livelihood (Artha), experiencing love and joy (Kama), and seeking spiritual liberation (Moksha).",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What are the four natural life stages in the traditional Ashrama system?",
+    "options": [
+      {
+        "text": "Child, Youth, Adult, Elder",
+        "correct": false
+      },
+      {
+        "text": "Brahmacharya (Student), Grihastha (Householder), Vanaprastha (Retirement), Sannyasa (Renunciation)",
+        "correct": true
+      },
+      {
+        "text": "Spring, Summer, Autumn, Winter",
+        "correct": false
+      },
+      {
+        "text": "Morning, Noon, Evening, Night",
+        "correct": false
+      }
+    ],
+    "explanation": "The four Ashramas provide a structured roadmap for human growth from disciplined education to family leadership, mentorship, and spiritual contemplation.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Stories & Characters • Ramayana (Sundara Kanda & Ayodhya)"
+    }
+  },
+  {
+    "category": "Sacred Music",
+    "question": "What is the ancient system of melodic frameworks used in classical Indian music to evoke specific emotional states (Rasas) and times of day?",
+    "options": [
+      {
+        "text": "Tala",
+        "correct": false
+      },
+      {
+        "text": "Raga",
+        "correct": true
+      },
+      {
+        "text": "Dhrupad",
+        "correct": false
+      },
+      {
+        "text": "Alap",
+        "correct": false
+      }
+    ],
+    "explanation": "From 'Ranj' (to color the mind). A Raga is a melodic structure that colors the listener's consciousness with specific spiritual sentiments.",
+    "sourceLocation": {
+      "tool": "shlokasTool",
+      "label": "Shlokas, Mantras & Bhajans • Devotional Chants"
+    }
+  },
+  {
+    "category": "Sacred Mantras",
+    "question": "What is the primordial cosmic sacred syllable comprising A-U-M that represents the source and fabric of all creation?",
+    "options": [
+      {
+        "text": "Hrim",
+        "correct": false
+      },
+      {
+        "text": "Om (Pranava)",
+        "correct": true
+      },
+      {
+        "text": "Klim",
+        "correct": false
+      },
+      {
+        "text": "Shrim",
+        "correct": false
+      }
+    ],
+    "explanation": "The Mandukya Upanishad explains that 'AUM' encompasses the waking state (A), dream state (U), deep sleep (M), and the transcendent silence beyond (Turiya).",
+    "sourceLocation": {
+      "tool": "shlokasTool",
+      "label": "Shlokas, Mantras & Bhajans • Sacred Chants"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What is the ancient Sanskrit principle 'Vasudhaiva Kutumbakam' derived from the Maha Upanishad?",
+    "options": [
+      {
+        "text": "Victory belongs to the strong",
+        "correct": false
+      },
+      {
+        "text": "The whole world is one single family",
+        "correct": true
+      },
+      {
+        "text": "Nature must be feared",
+        "correct": false
+      },
+      {
+        "text": "Truth is known only to kings",
+        "correct": false
+      }
+    ],
+    "explanation": "'Ayam bandhur ayam neti ganana laghucetasam | Udaracaritanam tu vasudhaiva kutumbakam' teaches universal kinship beyond narrow national boundaries.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What is the profound Vedic dictum 'Satyam Eva Jayate' taken from the Mundaka Upanishad?",
+    "options": [
+      {
+        "text": "Strength wins all wars",
+        "correct": false
+      },
+      {
+        "text": "Truth alone triumphs, never falsehood",
+        "correct": true
+      },
+      {
+        "text": "Patience is good",
+        "correct": false
+      },
+      {
+        "text": "Wisdom is silent",
+        "correct": false
+      }
+    ],
+    "explanation": "'Satyam eva jayate nanritam' affirms that cosmic truth ultimately outlasts and overcomes deceit, serving as the national motto of India.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What does the sacred fire ritual known as a Yajna (or Havan) signify in traditional practice?",
+    "options": [
+      {
+        "text": "Burning garbage",
+        "correct": false
+      },
+      {
+        "text": "Offering sacred grains, ghee, and herbs into consecrated Agni for cosmic well-being and purification",
+        "correct": true
+      },
+      {
+        "text": "Cooking dinner outside",
+        "correct": false
+      },
+      {
+        "text": "A physical test of endurance",
+        "correct": false
+      }
+    ],
+    "explanation": "In Yajna, Agni acts as the cosmic messenger carrying purified offerings and prayers for universal welfare, rain, environment, and peace.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Heritage Lessons & Epics"
+    }
+  },
+  {
+    "category": "Core Concepts",
+    "question": "What is the essential Sanskrit teaching behind greeting with folded palms at the heart while saying 'Namaste' or 'Namaskara'?",
+    "options": [
+      {
+        "text": "A casual hello to strangers",
+        "correct": false
+      },
+      {
+        "text": "I bow to the divine light residing within your heart",
+        "correct": true
+      },
+      {
+        "text": "I ask for something",
+        "correct": false
+      },
+      {
+        "text": "I promise to speak slowly",
+        "correct": false
+      }
+    ],
+    "explanation": "'Namah' (not mine / bowing ego) + 'Te' (to you). It recognizes the identical divine Spark (Atman) shining within the heart of every living being.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  },
+  {
+    "category": "Spiritual Practice",
+    "question": "What does the Sanskrit term 'Sadhana' signify in Hindu heritage?",
+    "options": [
+      {
+        "text": "A casual hobby performed once a year",
+        "correct": false
+      },
+      {
+        "text": "Dedicated, disciplined spiritual practice directed toward self-realization",
+        "correct": true
+      },
+      {
+        "text": "A physical race",
+        "correct": false
+      },
+      {
+        "text": "A business transaction",
+        "correct": false
+      }
+    ],
+    "explanation": "From 'Sadh' (to accomplish). Sadhana is intentional daily discipline (prayer, meditation, study) that refines human consciousness.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Heritage Lessons & Epics"
+    }
+  },
+  {
+    "category": "Temple Rituals",
+    "question": "What does the ritual of Pradakshina (walking clockwise around a sanctum) symbolize?",
+    "options": [
+      {
+        "text": "Finding an exit door",
+        "correct": false
+      },
+      {
+        "text": "Keeping the Divine as the constant center of all one's daily activities",
+        "correct": true
+      },
+      {
+        "text": "Getting physical exercise after a meal",
+        "correct": false
+      },
+      {
+        "text": "Counting the temple pillars",
+        "correct": false
+      }
+    ],
+    "explanation": "By circumambulating clockwise, the devotee keeps the sanctum on their right side, affirming that God is the true center around which life revolves.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Heritage Lessons & Epics"
+    }
+  },
+  {
+    "category": "Sacred Traditions",
+    "question": "What does the auspicious Tilak (or Bindi) applied at the midpoint between the eyebrows represent?",
+    "options": [
+      {
+        "text": "A fashion accessory only",
+        "correct": false
+      },
+      {
+        "text": "The Agnya Chakra (center of intuition, spiritual insight, and concentration)",
+        "correct": true
+      },
+      {
+        "text": "A sign of physical tiredness",
+        "correct": false
+      },
+      {
+        "text": "A royal stamp",
+        "correct": false
+      }
+    ],
+    "explanation": "The Tilak cools and focuses the Agnya Chakra, reminding the wearer and observer to view the world through spiritual discernment rather than superficial sight.",
+    "sourceLocation": {
+      "tool": "storiesTool",
+      "label": "Heritage Lessons & Epics"
+    }
+  },
+  {
+    "category": "Sacred Calendar",
+    "question": "In the traditional Hindu Panchanga (calendar), what do Shukla Paksha and Krishna Paksha denote?",
+    "options": [
+      {
+        "text": "Summer and winter seasons",
+        "correct": false
+      },
+      {
+        "text": "The bright waxing fortnight and dark waning fortnight of the moon",
+        "correct": true
+      },
+      {
+        "text": "Day and night hours",
+        "correct": false
+      },
+      {
+        "text": "Planting and harvesting weeks",
+        "correct": false
+      }
+    ],
+    "explanation": "Each lunar month is divided into two 15-day fortnights: Shukla Paksha (from new moon to full moon) and Krishna Paksha (from full moon to new moon).",
+    "sourceLocation": {
+      "tool": "festivalTool",
+      "label": "Festivals & Traditions"
+    }
+  },
+  {
+    "category": "Upanishadic Wisdom",
+    "question": "What is the sublime prayer of the Brihadaranyaka Upanishad: 'Asato Mā Sadgamaya, Tamaso Mā Jyotirgamaya' asking for?",
+    "options": [
+      {
+        "text": "Lead us from poverty to earthly riches",
+        "correct": false
+      },
+      {
+        "text": "Lead us from untruth to truth, and from darkness to light and immortality",
+        "correct": true
+      },
+      {
+        "text": "Grant us victory in battles",
+        "correct": false
+      },
+      {
+        "text": "Keep the rain clouds away",
+        "correct": false
+      }
+    ],
+    "explanation": "This universal Shanti mantra prays for the spiritual journey: moving from transient illusions to eternal truth, and from the darkness of ignorance to the light of wisdom.",
+    "sourceLocation": {
+      "tool": "vocabularyTool",
+      "label": "A–Z Core Cultural Glossary"
+    }
+  }
+]
