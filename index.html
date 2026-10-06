@@ -40,6 +40,8 @@
     html {
       scroll-behavior: smooth;
       font-size: calc(16px * var(--font-scale));
+      overflow-x: hidden;
+      max-width: 100vw;
     }
 
     body {
@@ -51,6 +53,12 @@
         radial-gradient(circle at 92% 16%, rgba(207, 83, 19, 0.10), transparent 23rem),
         var(--cream);
       transition: background 0.3s ease, color 0.3s ease;
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+
+    img, video, canvas, svg {
+      max-width: 100%;
     }
 
     button, input, textarea, select {
@@ -504,19 +512,24 @@
       padding-right: 22px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 860px) {
       .daily-card {
         grid-template-columns: 1fr;
       }
       .daily-card-media {
         width: 100%;
-        height: 180px;
+        height: 220px;
       }
       .daily-card-content {
-        padding: 0 20px;
+        padding: 16px 20px 8px;
       }
       .daily-card .button-row {
         padding: 0 20px 20px;
+        flex-direction: row;
+        width: 100%;
+      }
+      .daily-card .button-row button {
+        flex: 1;
       }
     }
 
@@ -1527,6 +1540,7 @@
       .hero {
         grid-template-columns: 1fr;
         gap: 24px;
+        padding: 40px 0 28px;
       }
       .main-grid, .three-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1538,32 +1552,38 @@
 
     @media (max-width: 768px) {
       nav {
-        padding: 12px 18px;
+        padding: 10px 16px;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        gap: 16px;
+        gap: 12px;
+      }
+      .brand {
+        font-size: 1.25rem;
       }
       .nav-links {
         display: flex;
         overflow-x: auto;
         white-space: nowrap;
-        padding: 4px 0;
-        gap: 18px;
+        flex-wrap: nowrap;
+        padding: 4px 2px 6px;
+        gap: 10px;
         -webkit-overflow-scrolling: touch;
-      }
-      .nav-links a {
-        padding: 6px 12px;
-        font-size: 0.92rem;
+        scrollbar-width: none;
       }
       .nav-links::-webkit-scrollbar {
         display: none;
       }
+      .nav-links a {
+        padding: 6px 12px;
+        font-size: 0.88rem;
+        flex-shrink: 0;
+      }
       .hero {
-        padding: 24px 0;
+        padding: 24px 0 16px;
       }
       .hero-art {
-        min-height: 380px;
+        min-height: 320px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -1577,15 +1597,26 @@
         box-sizing: border-box;
         z-index: 2;
       }
+      .two-grid {
+        grid-template-columns: 1fr;
+      }
       .daily-card {
         grid-template-columns: 1fr;
       }
       .daily-card-media {
         width: 100%;
-        height: 190px;
+        height: 220px;
+      }
+      .daily-card-content {
+        padding: 18px 18px 8px;
       }
       .daily-card .button-row {
-        padding: 0 16px 16px;
+        padding: 0 18px 18px;
+        flex-direction: row;
+        width: 100%;
+      }
+      .daily-card .button-row button {
+        flex: 1;
       }
       .dhyana-parchment {
         padding: 24px 16px;
@@ -1628,36 +1659,90 @@
 
     @media (max-width: 600px) {
       nav {
-        padding: 12px 14px;
+        padding: 10px 12px;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
+        align-items: stretch;
+        gap: 8px;
+      }
+      .brand {
+        text-align: center;
+        justify-content: center;
+        font-size: 1.25rem;
       }
       .nav-links {
         width: 100%;
-        justify-content: center;
-        gap: 10px;
-        flex-wrap: wrap;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 4px 2px 8px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+      .nav-links::-webkit-scrollbar {
+        display: none;
       }
       .nav-links a {
-        padding: 6px 10px;
-        font-size: 0.88rem;
+        padding: 5px 10px;
+        font-size: 0.82rem;
+        flex-shrink: 0;
+      }
+      .hero-art {
+        min-height: 280px;
+        padding: 16px 12px;
+      }
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+      .hero-buttons button {
+        width: 100%;
+        justify-content: center;
+      }
+      .search-wrap {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 8px;
+      }
+      .search-wrap button {
+        width: 100%;
+        justify-content: center;
+      }
+      .daily-card-media {
+        height: 200px;
+      }
+      .daily-card-content {
+        padding: 14px 14px 6px;
+      }
+      .daily-card .button-row {
+        padding: 0 14px 14px;
+        flex-direction: column;
+      }
+      .daily-card .button-row button {
+        width: 100%;
       }
       .main-grid, .three-grid, .two-grid {
         grid-template-columns: 1fr;
       }
+      .future-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+      .lead-grid-2, .lead-grid-3, .lead-grid-4 {
+        grid-template-columns: 1fr;
+      }
       h1 {
-        font-size: 1.85rem;
+        font-size: 1.75rem;
       }
       h2 {
-        font-size: 1.45rem;
+        font-size: 1.4rem;
       }
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.15rem;
       }
       .container {
-        width: 95%;
-        padding: 0 8px;
+        width: 100%;
+        padding: 0 14px;
       }
       .card {
         padding: 16px 14px;
@@ -1675,8 +1760,8 @@
         padding: 14px;
       }
       .flashcard-body {
-        min-height: 250px;
-        padding: 20px 14px;
+        min-height: 240px;
+        padding: 18px 12px;
       }
       #toastContainer {
         left: 12px;
@@ -1690,6 +1775,24 @@
         width: 40px;
         height: 40px;
         font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 380px) {
+      .container {
+        padding: 0 10px;
+      }
+      .tool-panel {
+        padding: 14px 10px;
+      }
+      .card {
+        padding: 14px 10px;
+      }
+      h1 {
+        font-size: 1.55rem;
+      }
+      h2 {
+        font-size: 1.25rem;
       }
     }
         /* Hotspot Pop-up Box Overlay */
@@ -2587,16 +2690,16 @@
 
         <div class="daily-card">
           <div class="daily-card-media">
-            <img src="/images/daily.jpg" alt="Ancient Indian cultural heritage study desk with Sanskrit palm-leaf manuscripts, brass oil lamp, and peacock quill" class="daily-card-img" loading="lazy" />
+            <img src="images/daily.jpg" alt="Sacred glowing brass oil lamp on hand-carved temple stone with fresh marigold flower petals and sandalwood" class="daily-card-img" loading="lazy" />
           </div>
           <div class="daily-card-content">
             <span class="tag">Daily learning card</span>
-            <h3 id="dailyTitle">Value: Kindness</h3>
+            <h3 id="dailyTitle">Value: Inner Stillness</h3>
             <p id="dailyText">
-              Story connection: Krishna is often remembered as a supportive friend and guide.
+              Shloka connection: Gita 2.70 advises remaining steady like the deep ocean.
             </p>
             <p id="dailyTry">
-              Try it today: Include someone who is sitting alone or needs help.
+              Try it today: Take three slow breaths before responding when someone frustrates you.
             </p>
           </div>
 
