@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48" aria-label="Cultural Heritage Emblem" role="img">
+  <defs>
+    <!-- Rich Golden Gradient -->
+    <linearGradient id="heritageGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="35%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+
+    <!-- Warm Flame of Knowledge Gradient -->
+    <linearGradient id="torchFlame" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#dc2626"/>
+      <stop offset="30%" stop-color="#ea580c"/>
+      <stop offset="70%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#fffbeb"/>
+    </linearGradient>
+
+    <!-- Deep Museum Archival Background Disc -->
+    <radialGradient id="heritageDisc" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#2a1b14"/>
+      <stop offset="65%" stop-color="#18110c"/>
+      <stop offset="100%" stop-color="#0d0907"/>
+    </radialGradient>
+
+    <!-- Soft Golden Aura -->
+    <radialGradient id="heritageAura" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#d97706" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#d97706" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Drop Shadow for Dimensional Relief -->
+    <filter id="heritageShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="1.2" stdDeviation="0.9" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- 1. Outer Beaded Preservation Ring -->
+  <circle cx="24" cy="24" r="23" fill="none" stroke="url(#heritageGold)" stroke-width="1.2" stroke-dasharray="2 1.5"/>
+
+  <!-- 2. Dark Archival Stone Medallion Disc -->
+  <circle cx="24" cy="24" r="21.5" fill="url(#heritageDisc)" stroke="url(#heritageGold)" stroke-width="1"/>
+
+  <!-- 3. Ambient Heritage Glow -->
+  <circle cx="24" cy="22" r="15" fill="url(#heritageAura)"/>
+
+  <!-- 4. Classical Cultural Heritage Architecture & Symbols -->
+  <g filter="url(#heritageShadow)">
+    <!-- Laurel Wreath (Preservation & Global Honors) Leaves -->
+    <!-- Left Laurel Branch -->
+    <path d="M9 25 C8 19 11 13 16 10 C15 13 13 17 14 21 C12 21 10 23 9 25 Z" fill="url(#heritageGold)" opacity="0.85"/>
+    <path d="M10 28 C9 32 12 36 17 38 C15 35 14 31 15 28 C13 28 11 28 10 28 Z" fill="url(#heritageGold)" opacity="0.85"/>
+    <!-- Right Laurel Branch -->
+    <path d="M39 25 C40 19 37 13 32 10 C33 13 35 17 34 21 C36 21 38 23 39 25 Z" fill="url(#heritageGold)" opacity="0.85"/>
+    <path d="M38 28 C39 32 36 36 31 38 C33 35 34 31 33 28 C35 28 37 28 38 28 Z" fill="url(#heritageGold)" opacity="0.85"/>
+
+    <!-- Monument Pediment / Classical Triangular Arch Roof -->
+    <polygon points="24,9 13.5,15.5 34.5,15.5" fill="url(#heritageGold)"/>
+    <!-- Architrave / Cornice Beam -->
+    <rect x="14" y="16" width="20" height="2" rx="0.5" fill="#fef08a"/>
+
+    <!-- Monument Pillars (Twin Colonnade - Enduring Architecture) -->
+    <!-- Left Column: Capital, Shaft, Base -->
+    <rect x="15.5" y="18.5" width="4" height="1" fill="#fef08a"/>
+    <rect x="16" y="19.5" width="3" height="12" rx="0.5" fill="url(#heritageGold)"/>
+    <rect x="15.5" y="31.5" width="4" height="1.2" fill="#fef08a"/>
+
+    <!-- Right Column: Capital, Shaft, Base -->
+    <rect x="28.5" y="18.5" width="4" height="1" fill="#fef08a"/>
+    <rect x="29" y="19.5" width="3" height="12" rx="0.5" fill="url(#heritageGold)"/>
+    <rect x="28.5" y="31.5" width="4" height="1.2" fill="#fef08a"/>
+
+    <!-- Classical Rounded Arch (Inner Sanctum of Heritage) -->
+    <path d="M19 23 Q24 18.5 29 23 L29 20 Q24 16.5 19 20 Z" fill="url(#heritageGold)"/>
+
+    <!-- Living Flame of Knowledge, Memory & Oral History (Center) -->
+    <!-- Outer Flame -->
+    <path d="M24 16.5 C21.5 20.5 20 23.5 21.8 26.5 C22.8 28 25.2 28 26.2 26.5 C28 23.5 26.5 20.5 24 16.5 Z" fill="url(#torchFlame)"/>
+    <!-- Inner Radiant Core -->
+    <path d="M24 20 C22.8 22.5 22 24.5 23 26 C23.5 26.8 24.5 26.8 25 26 C26 24.5 25.2 22.5 24 20 Z" fill="#fffbeb"/>
+
+    <!-- Open Ancient Scroll / Manuscript of Ancestral Wisdom (Base) -->
+    <!-- Scroll Paper Ribbons -->
+    <path d="M15 34 C19 33 24 35 29 33 C31 33.5 33 34.5 33 36 C29 35 24 37 19 35 C17 34.8 15 35 15 34 Z" fill="url(#heritageGold)"/>
+    <!-- Plinth / Monument Foundation Step -->
+    <rect x="13.5" y="36.5" width="21" height="2" rx="0.8" fill="url(#heritageGold)"/>
+    <rect x="12" y="38.5" width="24" height="1.5" rx="0.6" fill="#78350f"/>
+  </g>
+</svg>
