@@ -2,13 +2,22 @@ const { DatabaseSync } = require('node:sqlite');
 const path = require('node:path');
 const fs = require('node:fs');
 
-const DATA_DIR = path.join(__dirname, '..', 'data');
-if (!fs.existsSync(DATA_DIR)) {
-  fs.mkdirSync(DATA_DIR, { recursive: true });
-}
+let db;
+let DB_PATH;
 
-const DB_PATH = path.join(DATA_DIR, 'dharma.db');
-const db = new DatabaseSync(DB_PATH);
+try {
+  const isServerless = process.env.VERCEL || process.env.AWS_LAMBDA_FUNCTION_NAME || process.env.LAMBDA_TASK_ROOT;
+  const DATA_DIR = isServerless ? path.join('/tmp', 'heritage_data') : path.join(__dirname, '..', 'data');
+  if (!fs.existsSync(DATA_DIR)) {
+    fs.mkdirSync(DATA_DIR, { recursive: true });
+  }
+  DB_PATH = path.join(DATA_DIR, 'dharma.db');
+  db = new DatabaseSync(DB_PATH);
+} catch (err) {
+  console.warn('File database initialization failed, falling back to in-memory SQLite:', err.message);
+  DB_PATH = ':memory:';
+  db = new DatabaseSync(':memory:');
+}
 
 // Enable WAL mode and foreign keys
 db.exec('PRAGMA foreign_keys = ON;');

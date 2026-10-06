@@ -113,6 +113,16 @@ test('GET /api/quizzes returns questions with options array', async () => {
   assert.ok(Array.isArray(res.body.data[0].options));
 });
 
+test('GET /api/quizzes safely handles limit query parameter and non-numeric input', async () => {
+  const resLimit = await request('/quizzes?limit=3');
+  assert.strictEqual(resLimit.status, 200);
+  assert.strictEqual(resLimit.body.data.length, 3);
+
+  const resInvalid = await request('/quizzes?limit=notanumber');
+  assert.strictEqual(resInvalid.status, 200);
+  assert.ok(resInvalid.body.data.length >= 8);
+});
+
 test('POST /api/quizzes/submit verifies answer and tracks streak', async () => {
   const studentId = 'test_student_' + Date.now();
   // Question 1: Hanuman question (index 1 is correct)

@@ -4202,8 +4202,20 @@
     /* =========================================================================
        1. GLOBAL STATE & PERSISTENCE
        ========================================================================= */
-    /* API endpoint configuration: works seamlessly via http://localhost:3000, VS Code Live Server (port 5500), AND file:// */
-    const API_BASE = (window.location.port === '3000' && window.location.protocol.startsWith('http')) ? '' : 'http://localhost:3000';
+    /* API endpoint configuration: works seamlessly via http://localhost:3000, production/Vercel (same-origin relative ''), VS Code Live Server (port 5500), AND file:// */
+    const API_BASE = (() => {
+      if (typeof window === 'undefined') return '';
+      // Remote host or production deployment (e.g. Vercel, Netlify, custom domain) -> always relative same-origin
+      if (window.location.hostname && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+        return '';
+      }
+      // Running directly on local server port 3000 -> relative same-origin
+      if (window.location.port === '3000') {
+        return '';
+      }
+      // Alternative local dev servers (e.g. Live Server on 5500) or file:/// -> proxy to local API server
+      return 'http://localhost:3000';
+    })();
 
     const appState = {
       story: "hanuman",
@@ -6785,21 +6797,30 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
       }
     }
 
+    let cachedSpeechVoices = [];
+    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
+      cachedSpeechVoices = window.speechSynthesis.getVoices() || [];
+      window.speechSynthesis.onvoiceschanged = () => {
+        cachedSpeechVoices = window.speechSynthesis.getVoices() || [];
+      };
+    }
+
     function speakGlossaryTerm(term, phonetic) {
-      if (phonetic) {
-        showToast(`Pronunciation: [${phonetic}] • "${term}"`, "info");
-      }
       if ('speechSynthesis' in window) {
         try {
           window.speechSynthesis.cancel();
           const utterance = new SpeechSynthesisUtterance(term);
           utterance.rate = 0.85;
-          const voices = window.speechSynthesis.getVoices();
-          const naturalVoice = voices.find(v => (v.lang === "hi-IN" || v.lang === "en-IN") && (v.name.includes("Rishi") || v.name.includes("Lekha") || v.name.includes("Natural") || v.name.includes("Google") || v.name.includes("India")));
+          const voices = (cachedSpeechVoices && cachedSpeechVoices.length > 0) ? cachedSpeechVoices : (window.speechSynthesis.getVoices() || []);
+          const naturalVoice = voices.find(v => (v.lang === "hi-IN" || v.lang === "en-IN" || v.lang.startsWith("hi")) && (v.name.includes("Rishi") || v.name.includes("Lekha") || v.name.includes("Natural") || v.name.includes("Google") || v.name.includes("India")))
+            || voices.find(v => v.lang === "hi-IN")
+            || voices.find(v => v.lang === "en-IN")
+            || voices[0];
           if (naturalVoice) {
             utterance.voice = naturalVoice;
+            utterance.lang = naturalVoice.lang;
           } else {
-            utterance.lang = "hi-IN";
+            utterance.lang = "en-IN";
           }
           window.speechSynthesis.speak(utterance);
         } catch (e) {

@@ -16,8 +16,11 @@ router.get('/', (req, res) => {
 
     query += ' ORDER BY id ASC';
     if (limit) {
-      query += ' LIMIT ?';
-      params.push(parseInt(limit, 10));
+      const parsedLimit = parseInt(limit, 10);
+      if (!isNaN(parsedLimit) && parsedLimit > 0) {
+        query += ' LIMIT ?';
+        params.push(parsedLimit);
+      }
     }
 
     const rows = db.prepare(query).all(...params);
