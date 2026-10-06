@@ -2648,114 +2648,6 @@
       gap: 18px;
     }
 
-    /* =========================================================================
-       GENERATION TO GENERATION: LIVING HERITAGE & ORAL HISTORY
-       ========================================================================= */
-    #generations {
-      padding: 70px 0 50px;
-      background: radial-gradient(circle at 15% 20%, rgba(229, 169, 59, 0.05), transparent 50%),
-                  radial-gradient(circle at 85% 80%, rgba(214, 69, 80, 0.04), transparent 50%);
-      border-top: 1px solid var(--line);
-    }
-    .generation-grid {
-      display: grid;
-      grid-template-columns: 1.15fr 1fr;
-      gap: 24px;
-      margin-top: 24px;
-    }
-    @media (max-width: 900px) {
-      .generation-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-    .gen-card {
-      background: var(--card-bg);
-      border: 1.5px solid var(--line);
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-      display: flex;
-      flex-direction: column;
-      transition: border-color 0.25s ease, box-shadow 0.25s ease;
-    }
-    .gen-card:hover {
-      border-color: var(--gold);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    }
-    .gen-topic-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin: 14px 0 16px;
-    }
-    .gen-topic-btn {
-      padding: 7px 13px;
-      border-radius: 20px;
-      background: rgba(229, 169, 59, 0.08);
-      border: 1px solid var(--line);
-      color: var(--ink);
-      font-size: 0.85rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    .gen-topic-btn.active, .gen-topic-btn:hover {
-      background: var(--gold);
-      color: #111;
-      border-color: var(--gold);
-      transform: translateY(-1px);
-    }
-    .elder-prompt-box {
-      background: rgba(0, 0, 0, 0.25);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 16px;
-      margin-bottom: 14px;
-    }
-    .elder-prompt-item {
-      padding: 10px 14px;
-      border-radius: 8px;
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--line);
-      margin-bottom: 8px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 12px;
-      transition: background 0.2s ease, border-color 0.2s ease;
-    }
-    .elder-prompt-item:hover {
-      background: rgba(229, 169, 59, 0.08);
-      border-color: var(--gold);
-    }
-    .keepsake-card {
-      background: linear-gradient(135deg, rgba(229, 169, 59, 0.12) 0%, rgba(34, 26, 23, 0.95) 100%);
-      border: 1.5px solid var(--gold);
-      border-radius: 14px;
-      padding: 20px;
-      margin-top: 16px;
-      animation: fadeIn 0.3s ease-in-out;
-    }
-    .ai-suggestion-chip {
-      padding: 6px 14px;
-      border-radius: 20px;
-      background: rgba(229, 169, 59, 0.08);
-      border: 1px solid rgba(229, 169, 59, 0.25);
-      color: var(--ink);
-      font-size: 0.82rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .ai-suggestion-chip:hover {
-      background: rgba(229, 169, 59, 0.22);
-      border-color: var(--gold);
-      color: var(--gold);
-      transform: translateY(-1px);
-    }
   </style>
 </head>
 
@@ -2770,7 +2662,6 @@
 
     <div class="nav-links">
       <a href="#learn">Curriculum</a>
-      <a href="#generations">Generations</a>
       <a href="javascript:void(0)" onclick="openTool('templeArchitectureTool')">Architecture</a>
       <a href="javascript:void(0)" onclick="openTool('tirthasTool')">Sacred Tirthas</a>
       <a href="javascript:void(0)" onclick="openTool('cosmicClockTool')">Cosmic Clock</a>
@@ -2786,16 +2677,17 @@
     <section id="home">
       <div class="container hero">
         <div>
-          <span class="eyebrow">World Heritage • Living Traditions • Generations</span>
-          <h1>Passing down world heritage from generation to generation.</h1>
+          <span class="eyebrow">Learn • Explore • Respect</span>
+          <h1>Discover stories, symbols, and timeless wisdom.</h1>
           <p class="lead">
-            E-Heritage connects students, families, and communities with timeless human wisdom, ancient monuments, oral histories, and living traditions across civilizations. Powered by simple, accessible AI to help elders share stories and youth preserve their heritage.
+            E-Heritage is an interactive learning companion for exploring Hindu stories,
+            sacred shlokas with Devanagari, epic timelines, festivals, murti iconography,
+            and respectful inquiry powered by Gemini AI.
           </p>
 
           <div class="hero-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
             <a href="#learn" class="button primary">Start Learning</a>
-            <a href="#generations" class="button secondary">Generations &amp; Oral History</a>
-            <a href="#ask" class="button secondary">Ask Simple AI</a>
+            <a href="#quizSection" class="button secondary">Play Quiz & Cards</a>
           </div>
         </div>
 
@@ -2818,7 +2710,7 @@
           <input
             id="globalSearch"
             type="text"
-            placeholder="Search world heritage: monuments, oral history, ancient architecture, Gita, festivals, elders' wisdom, virtues..."
+            placeholder="Search: Hanuman, Gita, Arjuna, Gayatri, Diwali, Krishna, Shiva, Lotus, Prasad..."
           />
           <button class="primary" onclick="searchApp()">Search</button>
         </div>
@@ -3977,142 +3869,6 @@
 
     <div class="jali-divider" aria-hidden="true"></div>
 
-    <!-- GENERATION TO GENERATION: LIVING HERITAGE & ORAL HISTORY -->
-    <section id="generations">
-      <div class="container">
-        <span class="eyebrow">Living Memory • Intergenerational Wisdom</span>
-        <h2>Passing Down Heritage: Generation to Generation</h2>
-        <p class="section-intro">
-          Cultural heritage isn't just stone monuments or museum showcases—it lives in the memories of our grandparents, the recipes in our kitchens, and the values passed down from parents to children. With simple AI tools, students and families can easily interview elders, capture living oral histories, and preserve family roots for future generations.
-        </p>
-
-        <!-- Hero Feature Card for Generations -->
-        <div class="future-card" style="margin-bottom: 28px; border: 1.5px solid var(--gold); background: linear-gradient(135deg, rgba(229, 169, 59, 0.08) 0%, rgba(34, 26, 23, 0.8) 100%);">
-          <div class="future-card-media" style="max-height: 380px;">
-            <img id="generationsHeroImg" src="images/generations_heritage.jpg" onerror="this.src='images/future_community_meetings.jpg'" alt="Elder and youth sharing stories and preserving living heritage across generations" class="future-card-img" style="object-fit: cover; height: 100%; width: 100%; max-height: 380px;" loading="lazy">
-          </div>
-          <div class="future-card-body" style="padding: 24px;">
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px;">
-              <span class="tag" style="background: var(--gold-light); color: var(--gold); border-color: var(--gold); font-weight: 700;">Simple Intergenerational Learning</span>
-              <span style="font-size: 0.84rem; color: var(--muted); font-weight: 600;">Designed for Students, Families &amp; Classrooms</span>
-            </div>
-            <h3 style="color: var(--gold); margin: 0 0 10px; font-size: 1.35rem;">Why Transferring Heritage Across Generations Matters</h3>
-            <p style="font-size: 0.95rem; line-height: 1.65; color: var(--ink); margin: 0 0 14px;">
-              When an elder passes away without sharing their stories, an entire library of lived human experience disappears. By combining respectful youth curiosity with simple, friendly AI, we empower students to sit down with their grandparents, ask meaningful questions, and transform oral memories into beautiful, permanent family keepsakes.
-            </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-              <span class="ai-suggestion-chip">Hearthside Oral Storytelling</span>
-              <span class="ai-suggestion-chip">Honoring Ancestors &amp; Elders</span>
-              <span class="ai-suggestion-chip">Living Crafts &amp; Recipes</span>
-              <span class="ai-suggestion-chip">Sacred Respect for Nature</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="generation-grid">
-          <!-- Pillar 1: Ask an Elder (Interview Starter) -->
-          <div class="gen-card">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="tag" style="background: var(--saffron-light); color: var(--saffron); border-color: var(--saffron);">Pillar 1: Interactive Tool</span>
-              <span style="font-size: 0.8rem; color: var(--muted); font-weight: 700;">Step 1: Ask</span>
-            </div>
-            <h3 style="margin: 0 0 6px; color: var(--maroon); font-size: 1.3rem;">Ask an Elder (Interview Starter)</h3>
-            <p style="margin: 0; font-size: 0.9rem; color: var(--muted); line-height: 1.55;">
-              Select a conversation topic below to get 4 ready-to-use, respectful questions to ask your grandparents or community elders.
-            </p>
-
-            <div class="gen-topic-row">
-              <button type="button" class="gen-topic-btn active" onclick="switchElderTopic('roots', this)">Hometown &amp; Roots</button>
-              <button type="button" class="gen-topic-btn" onclick="switchElderTopic('festivals', this)">Festivals &amp; Food</button>
-              <button type="button" class="gen-topic-btn" onclick="switchElderTopic('wisdom', this)">Life Wisdom</button>
-              <button type="button" class="gen-topic-btn" onclick="switchElderTopic('tales', this)">Lullabies &amp; Tales</button>
-            </div>
-
-            <div id="elderQuestionsContainer" class="elder-prompt-box">
-              <!-- Dynamically populated questions -->
-            </div>
-
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto;">
-              <button type="button" class="primary small-button" onclick="copyAllElderQuestions()">
-                Copy All 4 Questions 📋
-              </button>
-              <button type="button" class="secondary small-button" onclick="askSimplePrompt('What are 5 more thoughtful questions I can ask my grandparents about our family heritage?')">
-                Ask AI for More Prompts →
-              </button>
-            </div>
-          </div>
-
-          <!-- Pillar 2: Simple AI Family Story & Memory Keeper -->
-          <div class="gen-card">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="tag" style="background: var(--gold-light); color: var(--gold); border-color: var(--gold);">Pillar 2: Simple AI Keeper</span>
-              <span style="font-size: 0.8rem; color: var(--muted); font-weight: 700;">Step 2: Preserve</span>
-            </div>
-            <h3 style="margin: 0 0 6px; color: var(--gold); font-size: 1.3rem;">Family Story &amp; Memory Keeper</h3>
-            <p style="margin: 0 0 12px; font-size: 0.9rem; color: var(--muted); line-height: 1.55;">
-              Type a short memory, story, or traditional lesson told by an elder. Our simple AI instantly formats it into an elegant family keepsake card you can save.
-            </p>
-
-            <div style="margin-bottom: 10px;">
-              <textarea
-                id="elderStoryInput"
-                style="width: 100%; min-height: 120px; font-size: 0.95rem; line-height: 1.6; padding: 12px; border-radius: 12px; border: 1.5px solid var(--line); background: rgba(0,0,0,0.2); color: var(--ink); box-sizing: border-box;"
-                placeholder="Example: My grandfather told me how his village would gather during the monsoon to clean the temple water tank together, share fresh sugarcane sweets, and sing ancient devotional songs by oil lamp..."
-              ></textarea>
-            </div>
-
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px;">
-              <button type="button" class="primary small-button" onclick="preserveElderMemory()">
-                Preserve Memory with Simple AI ✨
-              </button>
-              <button type="button" class="secondary small-button" onclick="fillExampleMemory()">
-                Load Example Story 📖
-              </button>
-            </div>
-
-            <div id="keepsakeOutputArea">
-              <!-- Keepsake card rendered here -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Pillar 3: 4 Living Pillars of Generational Transmission Across World Traditions -->
-        <div style="margin-top: 36px;">
-          <h3 style="color: var(--maroon); margin-bottom: 16px; font-size: 1.25rem; text-align: center;">
-            Universal World Heritage: 4 Ways Humanity Transmits Heritage Across Generations
-          </h3>
-          <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px;">
-            <div class="card" style="border-top: 3px solid var(--gold);">
-              <h4 style="color: var(--gold); margin: 0 0 6px; font-size: 1.05rem;">1. Oral Storytelling</h4>
-              <p style="font-size: 0.88rem; line-height: 1.6; color: var(--ink); margin: 0;">
-                Across Africa, the Americas, Asia, and Europe, ancient epics and folklore survived for millennia before print because elders told stories around hearth fires and children remembered them.
-              </p>
-            </div>
-            <div class="card" style="border-top: 3px solid var(--saffron);">
-              <h4 style="color: var(--saffron); margin: 0 0 6px; font-size: 1.05rem;">2. Honoring Ancestors</h4>
-              <p style="font-size: 0.88rem; line-height: 1.6; color: var(--ink); margin: 0;">
-                From Indian <em>Pitru Shraddha</em> and East Asian filial piety (<em>Xiao</em>) to indigenous ancestral remembrance, respecting elders teaches youth humility and timeless gratitude.
-              </p>
-            </div>
-            <div class="card" style="border-top: 3px solid #3498db;">
-              <h4 style="color: #3498db; margin: 0 0 6px; font-size: 1.05rem;">3. Sacred Nature Care</h4>
-              <p style="font-size: 0.88rem; line-height: 1.6; color: var(--ink); margin: 0;">
-                Traditional ecological knowledge—seasonal planting, sacred river festivals, water-saving stepwells, and forest shrines—passed down by elders to protect mother Earth.
-              </p>
-            </div>
-            <div class="card" style="border-top: 3px solid #2ecc71;">
-              <h4 style="color: #2ecc71; margin: 0 0 6px; font-size: 1.05rem;">4. Living Crafts &amp; Recipes</h4>
-              <p style="font-size: 0.88rem; line-height: 1.6; color: var(--ink); margin: 0;">
-                Master stonemasonry, silk weaving, metal casting, and grandmother recipes cannot be learned purely from textbooks; they require hands-on apprentice learning from elders.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="jali-divider" aria-hidden="true"></div>
-
     <!-- INTERACTIVE QUIZ & FLASHCARDS SECTION -->
     <section id="quizSection">
       <div class="container">
@@ -4279,33 +4035,17 @@
                   Ask E-Heritage
                 </h3>
                 <span style="font-size: 0.88rem; color: var(--muted); font-weight: 500;">
-                  World cultural heritage, philosophy, and intergenerational traditions explained simply for students and families
+                  Cultural &amp; philosophical questions answered with respectful scriptural grounding
                 </span>
               </div>
             </div>
             <div id="aiStatusPill" class="lead-badge safe" style="font-size:0.8rem; padding:5px 12px; border-radius:12px; border:1px solid rgba(46,204,113,0.4);">● AI Ready</div>
           </div>
 
-          <div class="gen-topic-row" style="margin: 0 0 14px; gap: 8px;">
-            <span style="font-size: 0.82rem; color: var(--muted); align-self: center; font-weight: 700;">Simple 1-Click Questions:</span>
-            <button type="button" class="ai-suggestion-chip" onclick="askSimplePrompt('What are 5 great questions I can ask my grandparents to learn about our family heritage?')">
-              Grandparent Questions
-            </button>
-            <button type="button" class="ai-suggestion-chip" onclick="askSimplePrompt('Why is passing down oral history from generation to generation so important for preserving world heritage?')">
-              Generations &amp; Oral History
-            </button>
-            <button type="button" class="ai-suggestion-chip" onclick="askSimplePrompt('How did ancient civilizations protect and preserve their monuments and sacred architecture?')">
-              Preserving Ancient Monuments
-            </button>
-            <button type="button" class="ai-suggestion-chip" onclick="askSimplePrompt('How do different cultures and world religions celebrate festivals that honor elders and family ancestors?')">
-              Honoring Elders Across Traditions
-            </button>
-          </div>
-
           <textarea
             id="questionInput"
             style="min-height: 130px; font-size: 1.05rem; line-height: 1.65; padding: 16px; border-radius: 14px; border: 1.5px solid var(--line); box-shadow: inset 0 1px 3px rgba(0,0,0,0.03); background: var(--card-bg); color: var(--ink); width: 100%; box-sizing: border-box;"
-            placeholder="Ask any question, e.g.: How do different cultures honor their ancestors? What questions should I ask my grandparents about our heritage? How were ancient monuments like Ellora built? What is the core lesson of the Bhagavad Gita?"
+            placeholder="Ask any question, e.g.: Where was Hanuman born? Why did Rama go to the forest? What does Ahimsa mean in everyday school life? What is the core lesson of the Bhagavad Gita?"
           ></textarea>
 
           <div class="button-row" style="margin-top: 14px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
@@ -4315,7 +4055,7 @@
           </div>
 
           <div id="answerBox" class="answer-box">
-            Type any question above or click a suggestion chip to explore world cultural heritage, ancient monuments, epics, oral traditions, and generational wisdom.
+            Type any question above and click <strong>Ask E-Heritage AI</strong> to explore Hindu philosophy, epics, deities, and ethics with verified cultural grounding.
           </div>
 
           <div class="notice">
@@ -4323,8 +4063,6 @@
           </div>
         </div>
       </div>
-    </section>
-
     <!-- FUTURE PLANNING & COMMUNITY ACTION -->
     <section id="futurePlanning">
       <div class="container">
@@ -4927,60 +4665,7 @@ Traditional sacred art uses visual metaphors to express profound philosophical r
   Artwork styles differ remarkably—from South Indian Chola bronzes and Bengal clay murtis to Himalayan paintings.`;
         }
 
-        // 11. Asking Elders, Grandparent Interviews & Oral History
-        if (q.includes("grandparent") || q.includes("elder") || q.includes("interview") || q.includes("oral history") || q.includes("family story") || q.includes("generation to generation") || q.includes("oral tradition")) {
-          return `### Preserving Living Heritage: Asking Elders & Grandparents
-
-**Why Oral History Matters:**
-Cultural heritage is not just stone monuments in distant lands; the most precious heritage lives in the memories, recipes, lullabies, and life lessons of our elders. Passing stories down from generation to generation connects youth with their ancestral roots.
-
-* **5 Great Questions to Ask Grandparents or Elders:**
-  1. **Origins & Roots:** "What was your childhood home or neighborhood like, and what sounds, trees, or smells do you remember most?"
-  2. **Festivals & Gatherings:** "What was your favorite family holiday when you were young, and how did your parents and grandparents prepare for it?"
-  3. **Overcoming Hardships:** "What was a tough moment in your life, and what values or people helped you stay patient and strong?"
-  4. **Life Advice for Youth:** "What is one piece of advice you learned from experience that you want my generation to remember?"
-  5. **Songs & Stories:** "Is there a folk song, prayer, bedtime fable, or family recipe that was passed down to you?"
-
-* **Student Preservation Tip:**
-  Use your phone's voice memo app or a notebook to record a 15-minute conversation with an elder. Save it to your family archive so their voice and wisdom are preserved for the next 100 years!`;
-        }
-
-        // 12. World Heritage, Ancient Monuments & Architectural Conservation
-        if (q.includes("monument") || q.includes("architecture") || q.includes("protect") || q.includes("preserve") || q.includes("ancient") || q.includes("world heritage") || q.includes("ellora")) {
-          return `### Preserving World Cultural Heritage & Ancient Monuments
-
-**Why World Heritage Belongs to All Humanity:**
-From the rock-cut monolithic marvel of Ellora Kailasa and the sun chariot of Konark, to the Roman Colosseum, the Parthenon, and the Great Pyramids, ancient architecture reflects the pinnacle of human ingenuity, spiritual aspiration, and art.
-
-* **How Civilizations Preserved Sacred Sites Across Generations:**
-  * **Sacred Ecology:** Ancient builders carved water-harvesting stepwells (Baolis) and planted sacred groves (Devarakadu) around temples to protect rock foundations from severe weather.
-  * **Master Craft Guilds (Shilpi):** Architectural treatises (*Shilpa Shastras*) were taught through multi-generational apprenticeships, passing precise masonry and stone conservation skills father-to-child and master-to-student.
-  * **Hereditary Community Guardians:** Local families and trusts took care of daily sweeping, lighting, and oral chronicles.
-
-* **Simple Modern Conservation:**
-  * **Cool-beam LED Conservation:** Eliminating heat and damaging carbon soot from burning waxes in ancient frescoed caves.
-  * **Digital 3D Archiving:** Creating non-invasive digital models so future generations can study fragile art without physical contact.
-  * **Community Action:** School and city clubs joining local historical societies to respectfully care for neighborhood landmarks.`;
-        }
-
-        // 13. Honoring Elders & Ancestors Across World Traditions
-        if (q.includes("ancestor") || q.includes("honor") || q.includes("honoring elders") || q.includes("filial") || q.includes("tradition across") || q.includes("all religion") || q.includes("world religion")) {
-          return `### Honoring Elders & Ancestors Across World Traditions
-
-**A Universal Human Value:**
-Every civilization across human history has recognized that honoring our elders and remembering our ancestors grounds families in humility, gratitude, and moral continuity.
-
-* **How Different Traditions Honor Generations:**
-  * **Dharmic Traditions (India):** Honoring *Pitrus* (ancestors) during seasonal remembrance, touching elders' feet (*Charan Sparsh*) to receive blessings, and living the ancient ideal *Matru Devo Bhava, Pitru Devo Bhava* (revere mother and father as sacred guides).
-  * **East Asian Traditions:** The virtue of *Xiao* (filial piety) in Confucian heritage, where caring for aging parents is considered the bedrock of a moral society.
-  * **Indigenous Traditions (Americas, Africa & Australia):** Village elders are revered as living encyclopedias of tribal history, sacred songlines, and plant knowledge.
-  * **Abrahamic Traditions:** The universal commandment to honor father and mother, and genealogical record-keeping preserved in family bibles and records.
-
-* **Student Takeaway:**
-  Listening patiently with an open heart whenever an elder speaks is itself a profound act of cultural heritage preservation.`;
-        }
-
-        // 14. General Cultural / Philosophical Inquiries (Adaptive Synthesis)
+        // 11. General Cultural / Philosophical Inquiries (Adaptive Synthesis)
         return `### Understanding: ${escapeHtml(promptText)}
 
 **Student Learning Perspective:**
@@ -5046,22 +4731,6 @@ In traditional South Asian and Hindu philosophy, questions about values, stories
             "- Dharma: Righteous living, ethical duty, and sustaining harmony in society and nature.",
             "- Ahimsa: Non-violence in thought, speech, and action; actively cultivating compassion.",
             "- Karma: Law of cause and effect; our intentional actions shape our character and future."
-          );
-        }
-
-        // Oral History, Elders, Generations
-        if (q.includes("grandparent") || q.includes("elder") || q.includes("interview") || q.includes("oral history") || q.includes("generation")) {
-          facts.push(
-            "- Oral History & Living Heritage: Cultural transmission survives through conversations with elders, capturing ancestral hometown memories, songs, and lived lessons.",
-            "- Universal Respect: Every civilization (Dharmic, East Asian, Indigenous, Abrahamic) centers on honoring elders and transmitting wisdom from generation to generation."
-          );
-        }
-
-        // World Heritage & Ancient Monuments
-        if (q.includes("monument") || q.includes("architecture") || q.includes("protect") || q.includes("preserve") || q.includes("world heritage") || q.includes("ancient")) {
-          facts.push(
-            "- World Heritage Preservation: Monuments like Ellora, Konark, Rome's Colosseum, and world sacred structures represent shared human achievement.",
-            "- Conservation Science: Heat-free museum LEDs, non-invasive 3D archiving, and local community stewardship protect fragile rock art and ancient stone."
           );
         }
 
@@ -7685,198 +7354,6 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
       answerQuestion(true);
     }
 
-    /* =========================================================================
-       GENERATIONS & ORAL HISTORY INTERACTIVE CONTROLLER
-       ========================================================================= */
-    const ELDER_TOPIC_QUESTIONS = {
-      roots: [
-        "What was your childhood neighborhood or hometown like, and what sounds, trees, or smells do you remember most?",
-        "What games did you play with friends or siblings when you were young without phones or computers?",
-        "What was the journey like when your family moved to where you live now?",
-        "Who was the oldest family member you remember meeting, and what were they like?"
-      ],
-      festivals: [
-        "What was your favorite family holiday or festival when you were growing up?",
-        "What special traditional foods, sweets, or family recipes were made only on festival days?",
-        "How did family and neighbors come together to prepare, clean, and decorate the house?",
-        "What traditional song, dance, or blessing was always shared at the table?"
-      ],
-      wisdom: [
-        "What was one of the toughest challenges you faced, and what values helped you stay patient and strong?",
-        "What is one piece of advice you learned from experience that you want my generation to remember?",
-        "What does living an honorable, kind life mean to you as you look back?",
-        "What is one thing that has changed in the world that you are proud of, and one thing you miss from the past?"
-      ],
-      tales: [
-        "Did your parents or grandparents sing a specific lullaby or tell a bedtime story to you?",
-        "What ancient fable, epic story, or proverb did your family recite to teach lessons about honesty or courage?",
-        "Are there family sayings, prayers, or proverbs in your mother tongue that you still repeat today?",
-        "Can you teach me a favorite phrase, verse, or blessing in your traditional language?"
-      ]
-    };
-
-    let currentElderTopic = 'roots';
-
-    function switchElderTopic(topicKey, btn) {
-      currentElderTopic = topicKey;
-      if (btn) {
-        document.querySelectorAll('.gen-topic-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-      }
-      renderElderQuestions(topicKey);
-    }
-
-    function renderElderQuestions(topicKey) {
-      const container = document.getElementById('elderQuestionsContainer');
-      if (!container) return;
-      const questions = ELDER_TOPIC_QUESTIONS[topicKey] || ELDER_TOPIC_QUESTIONS.roots;
-      
-      container.innerHTML = questions.map((q, idx) => `
-        <div class="elder-prompt-item">
-          <div style="font-size:0.91rem; line-height:1.5; color:var(--ink);">
-            <strong style="color:var(--gold); margin-right:6px;">Q${idx + 1}:</strong>${escapeHtml(q)}
-          </div>
-          <button type="button" class="secondary small-button" style="padding:4px 10px; font-size:0.75rem; white-space:nowrap;" onclick="copySingleQuestion('${escapeHtml(q).replace(/'/g, "\\'")}')">
-            Copy
-          </button>
-        </div>
-      `).join('');
-    }
-
-    function copySingleQuestion(qText) {
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(qText).then(() => {
-          showToast("Question copied to clipboard!", "success");
-        }).catch(() => {
-          showToast(qText, "info");
-        });
-      } else {
-        showToast(qText, "info");
-      }
-    }
-
-    function copyAllElderQuestions() {
-      const questions = ELDER_TOPIC_QUESTIONS[currentElderTopic] || ELDER_TOPIC_QUESTIONS.roots;
-      const textToCopy = `Questions for Grandparents & Elders (${currentElderTopic.toUpperCase()}):\n` +
-        questions.map((q, idx) => `${idx + 1}. ${q}`).join('\n');
-      
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(textToCopy).then(() => {
-          showToast("All 4 interview questions copied to clipboard!", "success");
-        }).catch(() => {
-          showToast("Failed to copy automatically", "warning");
-        });
-      } else {
-        showToast("Questions selected", "info");
-      }
-    }
-
-    function fillExampleMemory() {
-      const input = document.getElementById('elderStoryInput');
-      if (!input) return;
-      input.value = "My grandfather told me how his village would gather during the harvest festival to clean the temple water tank together, make sweet jaggery rice, and sing ancient shlokas by the light of clay oil lamps. He said: 'When a community cares for its water and remembers its elders, no drought can ever defeat them.'";
-      preserveElderMemory();
-    }
-
-    function preserveElderMemory() {
-      const input = document.getElementById('elderStoryInput');
-      const outputArea = document.getElementById('keepsakeOutputArea');
-      if (!input || !outputArea) return;
-      
-      const storyText = input.value.trim();
-      if (!storyText) {
-        showToast("Please write or paste an elder's memory or story first.", "warning");
-        return;
-      }
-
-      const dateStr = new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
-      
-      outputArea.innerHTML = `
-        <div class="keepsake-card" id="activeKeepsakeCard">
-          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:8px; margin-bottom:12px; border-bottom:1px solid rgba(229,169,59,0.3); padding-bottom:8px;">
-            <div style="display:flex; align-items:center; gap:8px;">
-              <span class="tag" style="background:var(--gold); color:#111; font-weight:800; margin:0;">FAMILY HERITAGE KEEPSAKE</span>
-              <span style="font-size:0.8rem; color:var(--muted);">${dateStr}</span>
-            </div>
-            <span style="font-size:0.82rem; color:var(--gold); font-weight:700;">Living Heritage Archive</span>
-          </div>
-
-          <h4 style="margin:0 0 10px; color:var(--gold); font-size:1.15rem; line-height:1.4;">
-            "A Voice Across Generations"
-          </h4>
-
-          <div style="background:rgba(0,0,0,0.25); border-left:3px solid var(--gold); padding:12px 14px; border-radius:0 8px 8px 0; margin-bottom:14px; font-style:italic; font-size:0.95rem; line-height:1.65; color:var(--ink);">
-            "${escapeHtml(storyText)}"
-          </div>
-
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px;">
-            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:8px; padding:10px;">
-              <strong style="color:var(--saffron); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:4px;">Core Value Transmitted:</strong>
-              <span style="font-size:0.88rem; color:var(--ink);">Gratitude, family solidarity, and sacred respect for community roots.</span>
-            </div>
-            <div style="background:rgba(255,255,255,0.03); border:1px solid var(--line); border-radius:8px; padding:10px;">
-              <strong style="color:var(--gold); font-size:0.82rem; text-transform:uppercase; display:block; margin-bottom:4px;">Preservation Action:</strong>
-              <span style="font-size:0.88rem; color:var(--ink);">Retell this story at family meals or write it into your student journal.</span>
-            </div>
-          </div>
-
-          <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;">
-            <button type="button" class="primary small-button" onclick="saveKeepsakeToJournal()">
-              Save to Student Journal 💾
-            </button>
-            <button type="button" class="secondary small-button" onclick="copyKeepsakeText()">
-              Copy Keepsake Text 📋
-            </button>
-          </div>
-        </div>
-      `;
-
-      showToast("Keepsake card generated with Simple AI!", "success");
-    }
-
-    function saveKeepsakeToJournal() {
-      const input = document.getElementById('elderStoryInput');
-      if (!input || !input.value.trim()) return;
-      const text = `[Elder Family Keepsake] ${input.value.trim()}`;
-      
-      const noteInput = document.getElementById('journalEntry');
-      if (noteInput) {
-        noteInput.value = text;
-        if (typeof addJournalEntry === 'function') addJournalEntry();
-        else if (typeof saveStudentNote === 'function') saveStudentNote();
-      }
-      showToast("Saved to your personal observation journal!", "success");
-    }
-
-    function copyKeepsakeText() {
-      const input = document.getElementById('elderStoryInput');
-      if (!input || !input.value.trim()) return;
-      const text = `Family Heritage Keepsake:\n"${input.value.trim()}"\n— Preserved via E-Heritage Living Traditions Archive`;
-      if (navigator.clipboard) {
-        navigator.clipboard.writeText(text).then(() => {
-          showToast("Keepsake text copied!", "success");
-        });
-      }
-    }
-
-    function askSimplePrompt(promptText) {
-      const input = document.getElementById('questionInput');
-      const askSection = document.getElementById('ask');
-      if (input) {
-        input.value = promptText;
-      }
-      if (askSection) {
-        askSection.scrollIntoView({ behavior: 'smooth' });
-      }
-      setTimeout(() => {
-        answerQuestion();
-      }, 350);
-    }
-
-    function initGenerations() {
-      renderElderQuestions('roots');
-    }
-
     /* Ask E-Heritage AI Tool */
     async function answerQuestion(forceInstant = false) {
       const input = document.getElementById("questionInput").value.trim();
@@ -9662,7 +9139,6 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
     initTempleArchitecture();
     initTirthasMap();
     initCosmicClock();
-    initGenerations();
     renderCurrentQuizQuestion();
     updateFlashcardUI();
     updateProgress();
