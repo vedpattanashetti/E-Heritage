@@ -4027,7 +4027,7 @@
 
             <div class="button-row" style="margin-top: 15px; justify-content:space-between; align-items:center;">
               <div style="font-size:0.86rem; color:var(--muted); font-weight:700;">
-                Score: <span id="quizScoreDisplay" style="color:var(--gold);">0</span> | Streak: <span id="quizStreak" style="color:var(--saffron);">0</span>
+                Score: <span id="quizScoreDisplay" style="color:var(--gold);">0</span> | Streak: <span id="quizStreak" style="color:var(--saffron);">0</span> | Best: <span id="bestStreak" style="color:var(--gold);">0</span>
               </div>
               <button id="quizNextBtn" class="primary small-button hidden" onclick="nextQuizQuestion()">Next Question →</button>
             </div>
@@ -4163,6 +4163,7 @@
                 </span>
               </div>
             </div>
+            <div id="aiStatusPill" class="lead-badge safe" style="font-size:0.8rem; padding:5px 12px; border-radius:12px; border:1px solid rgba(46,204,113,0.4);">● AI Ready</div>
           </div>
 
           <textarea
@@ -4347,12 +4348,8 @@
       }
       const playBtn = document.getElementById("shlokaPlayBtn");
       if (playBtn) playBtn.innerHTML = "Hear Authentic Recitation";
-      const bhajanPlayBtn = document.getElementById("bhajanPlayBtn");
-      if (bhajanPlayBtn) bhajanPlayBtn.innerHTML = "Hear Slow Pronunciation";
       const progressShloka = document.getElementById("shlokaAudioProgress");
       if (progressShloka) progressShloka.style.width = "0%";
-      const progressBhajan = document.getElementById("bhajanAudioProgress");
-      if (progressBhajan) progressBhajan.style.width = "0%";
       const timeEl = document.getElementById("shlokaAudioTime");
       if (timeEl) timeEl.innerText = "--:-- / --:--";
     }
@@ -6789,18 +6786,25 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
     }
 
     function speakGlossaryTerm(term, phonetic) {
+      if (phonetic) {
+        showToast(`Pronunciation: [${phonetic}] • "${term}"`, "info");
+      }
       if ('speechSynthesis' in window) {
-        window.speechSynthesis.cancel();
-        const utterance = new SpeechSynthesisUtterance(term);
-        utterance.rate = 0.85;
-        const voices = window.speechSynthesis.getVoices();
-        const naturalVoice = voices.find(v => (v.lang === "hi-IN" || v.lang === "en-IN") && (v.name.includes("Rishi") || v.name.includes("Lekha") || v.name.includes("Natural") || v.name.includes("Google") || v.name.includes("India")));
-        if (naturalVoice) {
-          utterance.voice = naturalVoice;
-        } else {
-          utterance.lang = "hi-IN";
+        try {
+          window.speechSynthesis.cancel();
+          const utterance = new SpeechSynthesisUtterance(term);
+          utterance.rate = 0.85;
+          const voices = window.speechSynthesis.getVoices();
+          const naturalVoice = voices.find(v => (v.lang === "hi-IN" || v.lang === "en-IN") && (v.name.includes("Rishi") || v.name.includes("Lekha") || v.name.includes("Natural") || v.name.includes("Google") || v.name.includes("India")));
+          if (naturalVoice) {
+            utterance.voice = naturalVoice;
+          } else {
+            utterance.lang = "hi-IN";
+          }
+          window.speechSynthesis.speak(utterance);
+        } catch (e) {
+          console.warn("Speech synthesis error:", e);
         }
-        window.speechSynthesis.speak(utterance);
       }
     }
 
