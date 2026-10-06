@@ -4,6 +4,7 @@
   "description": "Backend API server for E-Heritage cultural education platform",
   "main": "server.js",
   "scripts": {
+    "build": "node -e 'const fs = require(\"fs\"); fs.mkdirSync(\"public\", {recursive: true}); fs.cpSync(\"images\", \"public/images\", {recursive: true}); fs.cpSync(\"sounds\", \"public/sounds\", {recursive: true}); fs.copyFileSync(\"index.html\", \"public/index.html\");'",
     "start": "node server.js",
     "test": "node tests/api.test.js"
   },

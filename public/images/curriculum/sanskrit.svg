@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="treeBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#190e18"/>
+      <stop offset="60%" stop-color="#120812"/>
+      <stop offset="100%" stop-color="#080308"/>
+    </linearGradient>
+    <linearGradient id="trunkGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3f1a30"/>
+      <stop offset="40%" stop-color="#712b55"/>
+      <stop offset="70%" stop-color="#8d3a6d"/>
+      <stop offset="100%" stop-color="#2d1123"/>
+    </linearGradient>
+    <linearGradient id="goldLeaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde047"/>
+      <stop offset="60%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#92400e"/>
+    </linearGradient>
+    <linearGradient id="indicBranch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fb923c"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+    <linearGradient id="globalBranch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <radialGradient id="rootAura" cx="50%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#ea580c" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#080308" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="350" fill="url(#treeBg)"/>
+
+  <!-- Radial Root Glow at Base -->
+  <circle cx="300" cy="275" r="90" fill="url(#rootAura)"/>
+
+  <!-- Earth Foundation Base -->
+  <path d="M 50 310 Q 300 295 550 310 L 550 350 L 50 350 Z" fill="#1b0a17"/>
+  <line x1="50" y1="310" x2="550" y2="310" stroke="#b45309" stroke-width="1.5"/>
+
+  <!-- Subterranean Root Network (Dhatus - Sanskrit Verbal Roots) -->
+  <g stroke="#f59e0b" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M 285 270 Q 270 295 240 325 Q 220 340 180 345"/>
+    <path d="M 300 270 Q 300 300 290 335 Q 285 345 270 348"/>
+    <path d="M 315 270 Q 330 295 360 325 Q 380 340 420 345"/>
+    <path d="M 295 285 Q 240 305 210 315"/>
+    <path d="M 305 285 Q 360 305 390 315"/>
+  </g>
+
+  <!-- Root Devanagari Seed Badges -->
+  <rect x="145" y="325" width="60" height="22" rx="4" fill="#2d1123" stroke="#f59e0b" stroke-width="1"/>
+  <text x="175" y="340" fill="#fde047" font-family="'Noto Sans Devanagari', system-ui" font-size="12" font-weight="700" text-anchor="middle">विद् (Vid)</text>
+
+  <rect x="245" y="326" width="60" height="22" rx="4" fill="#2d1123" stroke="#f59e0b" stroke-width="1"/>
+  <text x="275" y="341" fill="#fde047" font-family="'Noto Sans Devanagari', system-ui" font-size="12" font-weight="700" text-anchor="middle">युज् (Yuj)</text>
+
+  <rect x="345" y="326" width="60" height="22" rx="4" fill="#2d1123" stroke="#f59e0b" stroke-width="1"/>
+  <text x="375" y="341" fill="#fde047" font-family="'Noto Sans Devanagari', system-ui" font-size="12" font-weight="700" text-anchor="middle">धृ (Dhṛ)</text>
+
+  <rect x="440" y="325" width="60" height="22" rx="4" fill="#2d1123" stroke="#f59e0b" stroke-width="1"/>
+  <text x="470" y="340" fill="#fde047" font-family="'Noto Sans Devanagari', system-ui" font-size="12" font-weight="700" text-anchor="middle">कृ (Kṛ)</text>
+
+  <!-- Tree Trunk (Sanskrit Language Core) -->
+  <path d="
+    M 270 270 
+    C 275 220, 260 170, 240 130 
+    C 270 145, 290 155, 300 135 
+    C 310 155, 330 145, 360 130 
+    C 340 170, 325 220, 330 270 
+    Z" 
+    fill="url(#trunkGrad)" stroke="#e5a93b" stroke-width="2"/>
+  
+  <text x="300" y="210" fill="#fde047" font-family="'Noto Sans Devanagari', system-ui" font-size="16" font-weight="800" text-anchor="middle">संस्कृतम्</text>
+  <text x="300" y="228" fill="#e2e8f0" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">SANSKRIT ROOT TRUNK</text>
+
+  <!-- Left Main Canopy Branch (Indic Descendants) -->
+  <path d="M 255 145 Q 210 120 150 110 Q 110 100 70 115" fill="none" stroke="#ea580c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 210 125 Q 180 85 140 70" fill="none" stroke="#ea580c" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 160 112 Q 130 135 90 145" fill="none" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Left Indic Leaves -->
+  <rect x="50" y="102" width="75" height="22" rx="4" fill="#3b1115" stroke="#f97316" stroke-width="1"/>
+  <text x="87" y="117" fill="#fed7aa" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Hindi (विद्या/योग)</text>
+
+  <rect x="110" y="58" width="85" height="22" rx="4" fill="#3b1115" stroke="#f97316" stroke-width="1"/>
+  <text x="152" y="73" fill="#fed7aa" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Bengali (বিদ্যা/কর্ম)</text>
+
+  <rect x="65" y="145" width="85" height="22" rx="4" fill="#3b1115" stroke="#f97316" stroke-width="1"/>
+  <text x="107" y="160" fill="#fed7aa" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Kannada (ಜ್ಞಾನ/ಶಾಂತಿ)</text>
+
+  <!-- Center Top Canopy (Classical Sanskrit Literature) -->
+  <path d="M 300 135 Q 300 80 300 45" fill="none" stroke="#e5a93b" stroke-width="4" stroke-linecap="round"/>
+  <rect x="250" y="32" width="100" height="24" rx="4" fill="#2e1428" stroke="#fde047" stroke-width="1.2"/>
+  <text x="300" y="48" fill="#fde047" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">VEDAS &amp; GITA</text>
+
+  <!-- Right Main Canopy Branch (Indo-European / Global Cognates) -->
+  <path d="M 345 145 Q 390 120 450 110 Q 490 100 530 115" fill="none" stroke="#0284c7" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 390 125 Q 420 85 460 70" fill="none" stroke="#0284c7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 440 112 Q 470 135 510 145" fill="none" stroke="#0284c7" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Right Global Cognate Leaves -->
+  <rect x="475" y="102" width="80" height="22" rx="4" fill="#082f49" stroke="#38bdf8" stroke-width="1"/>
+  <text x="515" y="117" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Vision &amp; Video</text>
+
+  <rect x="410" y="58" width="95" height="22" rx="4" fill="#082f49" stroke="#38bdf8" stroke-width="1"/>
+  <text x="457" y="73" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Mother (Mātṛ/Mater)</text>
+
+  <rect x="460" y="145" width="80" height="22" rx="4" fill="#082f49" stroke="#38bdf8" stroke-width="1"/>
+  <text x="500" y="160" fill="#bae6fd" font-family="system-ui, sans-serif" font-size="10" font-weight="700" text-anchor="middle">Yoke &amp; Join (Yuj)</text>
+
+  <!-- Top Headers for Branches -->
+  <text x="130" y="25" fill="#f97316" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">INDIC DESCENDANTS</text>
+  <text x="470" y="25" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="11" font-weight="800" text-anchor="middle">GLOBAL INDO-EUROPEAN</text>
+</svg>

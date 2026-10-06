@@ -47,6 +47,7 @@ app.use('/api', (req, res) => {
 });
 
 // Serve static frontend
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname)));
 
 // Fallback for SPA routing
