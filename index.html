@@ -2654,9 +2654,6 @@
 <body>
   <nav>
     <a class="brand" href="#home" title="E-Heritage Home">
-      <span class="brand-icon">
-        <img src="images/cultural_heritage_icon.png" alt="Cultural Heritage Emblem" width="32" height="32" />
-      </span>
       <span>E-Heritage</span>
     </a>
 
@@ -2682,7 +2679,7 @@
           <p class="lead">
             E-Heritage is an interactive learning companion for exploring Hindu stories,
             sacred shlokas with Devanagari, epic timelines, festivals, murti iconography,
-            and respectful inquiry powered by Gemini AI.
+            and respectful inquiry powered by E-Heritage AI.
           </p>
 
           <div class="hero-buttons" style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
@@ -3974,7 +3971,7 @@
         <span class="eyebrow">Visual Iconography</span>
         <h2>Murti & Artifact Vision Guide</h2>
         <p class="section-intro">
-          Analyze traditional sacred art by uploading a photo, using your device camera, or selecting visible symbols. Powered by Gemini Multimodal AI when connected.
+          Analyze traditional sacred art by uploading a photo, using your device camera, or selecting visible symbols. Powered by E-Heritage Multimodal AI when connected.
         </p>
 
         <div id="artifactTool" class="tool-panel">
@@ -4202,7 +4199,7 @@
       quizScore: Number(localStorage.getItem("dharmaQuizScore") || 0),
       quizStreak: 0,
       bestStreak: Number(localStorage.getItem("dharmaBestStreak") || 0),
-      geminiKey: localStorage.getItem("dharmaGeminiKey") || "",
+      aiKey: localStorage.getItem("heritageAiKey") || localStorage.getItem("dharmaGeminiKey") || "",
       theme: "candlelight",
       fontScale: Number(localStorage.getItem("dharmaFontScale") || 1),
       mediaStream: null,
@@ -4342,7 +4339,7 @@
     }
 
     /* =========================================================================
-       2. AI INTEGRATION (GOOGLE GEMINI REST API)
+       2. AI INTEGRATION (E-HERITAGE REST API)
        ========================================================================= */
     /* =========================================================================
        2. BUILT-IN ON-DEVICE AI & INFERENCE ENGINE (ZERO API KEY)
@@ -4841,7 +4838,7 @@ In traditional South Asian and Hindu philosophy, questions about values, stories
       },
 
       async generateTextStreaming(promptText, onChunk, onProgress) {
-        // Priority 1: Built-in Chrome Gemini Nano (if user has enabled it in browser flags)
+        // Priority 1: Built-in On-Device AI (if enabled in browser flags)
         if (this.hasChromeNano()) {
           try {
             const groundingFacts = DharmaSemanticEngine.getGroundingFacts ? DharmaSemanticEngine.getGroundingFacts(promptText) : "";
@@ -4857,12 +4854,12 @@ In traditional South Asian and Hindu philosophy, questions about values, stories
                 if (typeof onChunk === "function") onChunk(chunk, false);
               }
               session.destroy();
-              return { source: "Chrome Gemini Nano (On-Device Neural Network)", text: fullText };
+              return { source: "On-Device Neural Network", text: fullText };
             } else {
               const text = await session.prompt(promptText);
               session.destroy();
               if (typeof onChunk === "function") onChunk(text, true);
-              return { source: "Chrome Gemini Nano (On-Device Neural Network)", text };
+              return { source: "On-Device Neural Network", text };
             }
           } catch (e) {
             console.warn("Chrome Nano failed or unavailable, checking WebLLM WebGPU...", e);
@@ -7208,7 +7205,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
       resultBox.innerHTML = `
         <div style="padding: 18px; text-align: center;">
           <div style="color: var(--gold); font-weight: 700; font-size: 1.05rem; margin-bottom: 6px;">Analyzing Sacred Iconography...</div>
-          <div style="color: var(--muted); font-size: 0.9rem;">Examining mudras, postures (asanas), emblems, and philosophical symbolism with Google Gemini Multimodal AI.</div>
+          <div style="color: var(--muted); font-size: 0.9rem;">Examining mudras, postures (asanas), emblems, and philosophical symbolism with E-Heritage Multimodal AI.</div>
         </div>
       `;
 
@@ -7235,7 +7232,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
               <span class="tag" style="background:var(--gold-light); color:var(--gold); border:1px solid var(--gold); margin:0;">
                 Sacred Iconography Analysis
               </span>
-              <span style="font-size:0.8rem; color:var(--muted);">${escapeHtml(data.source || "Google Gemini Vision AI")}</span>
+              <span style="font-size:0.8rem; color:var(--muted);">${escapeHtml(data.source || "E-Heritage Vision AI")}</span>
             </div>
             <div class="analysis-body" style="line-height:1.75; font-size:0.95rem;">
               ${formatMarkdown(data.analysis)}
@@ -7437,12 +7434,12 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
         }
       }
 
-      // Primary Flow: Unified Single-Key Google Gemini AI via Server
+      // Primary Flow: Unified Single-Key E-Heritage AI via Server
       if (askBtn) askBtn.disabled = true;
       answerBox.innerHTML = `
         <div style="display:flex; align-items:center; gap:8px; padding:12px 0;">
           <span class="pulsing-dot" style="display:inline-block; width:10px; height:10px; border-radius:50%; background:var(--saffron);"></span>
-          <span style="color:var(--ink); font-weight:600;">Consulting E-Heritage AI (Google Gemini)...</span>
+          <span style="color:var(--ink); font-weight:600;">Consulting E-Heritage AI...</span>
         </div>
       `;
 
@@ -7462,7 +7459,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           answerBox.innerHTML = `
             <div style="margin-bottom:8px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
               <span class="tag" style="background:var(--green-light); color:var(--green); border:1px solid var(--green); font-weight:700;">
-                ${escapeHtml(data.source || 'Google Gemini AI')}
+                ${escapeHtml(data.source || 'E-Heritage AI')}
               </span>
               <small style="color:var(--muted);">Authentic culturally grounded response</small>
             </div>
@@ -7470,26 +7467,26 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
               ${formatMarkdown(data.answer)}
             </div>
           `;
-          showToast("Verified response from Gemini AI.", "success");
+          showToast("Verified response from E-Heritage AI.", "success");
           return;
         }
 
         // Server reported missing key or error -> fallback to instant semantic engine
         const fallbackText = DharmaSemanticEngine.resolve(input);
-        const isKeyMissing = data && data.error && data.error.includes('.env');
+        const isKeyMissing = data && data.error && (data.error.includes('.env') || data.error.includes('key'));
         answerBox.innerHTML = `
           <div style="margin-bottom:8px; display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
             <span class="tag" style="background:var(--warm-light); color:var(--maroon); border:1px solid var(--saffron); font-weight:700;">
               E-Heritage Built-in AI
             </span>
             <small style="color:var(--muted);">
-              ${isKeyMissing ? 'Server Gemini key not yet set in .env — using instant built-in engine.' : 'Instant fallback engine'}
+              ${isKeyMissing ? 'Server AI key not configured — using instant built-in engine.' : 'Instant fallback engine'}
             </small>
           </div>
           <div style="margin-top:10px; line-height:1.68;">${formatMarkdown(fallbackText)}</div>
         `;
         if (isKeyMissing) {
-          showToast("Add your GEMINI_API_KEY to .env to activate Google Gemini for everyone!", "info");
+          showToast("E-Heritage AI is running in offline wisdom mode.", "info");
         }
       } catch (netErr) {
         console.warn("Server AI request failed:", netErr);
@@ -7686,7 +7683,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
         }
       } catch (e) {}
 
-      // Check server single Gemini API key configuration
+      // Check server single AI engine configuration
       try {
 
 
@@ -7699,21 +7696,21 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
               pill.style.background = "var(--green-light)";
               pill.style.color = "var(--green)";
               pill.style.borderColor = "var(--green)";
-              pill.innerHTML = "Gemini AI Active";
-              pill.title = "Google Gemini API connected via server (.env). Everyone uses this single key!";
+              pill.innerHTML = "Heritage AI Active";
+              pill.title = "E-Heritage AI engine connected and active.";
               pill.style.cursor = "pointer";
               pill.onclick = () => {
-                showToast("Google Gemini is connected via server .env key. All visitors run on this single key.", "success");
+                showToast("E-Heritage AI is connected and active.", "success");
               };
             } else {
               pill.style.background = "var(--warm-light)";
               pill.style.color = "var(--maroon)";
               pill.style.borderColor = "var(--saffron)";
               pill.innerHTML = "Built-in AI Active";
-              pill.title = "Single server API key not yet configured in .env. Click for details.";
+              pill.title = "E-Heritage AI running in built-in mode.";
               pill.style.cursor = "pointer";
               pill.onclick = () => {
-                showToast("To activate Google Gemini for everyone, set GEMINI_API_KEY in your .env file.", "info");
+                showToast("E-Heritage AI running in built-in mode.", "info");
               };
             }
           }
@@ -8026,7 +8023,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "dhams",
           state: "Uttarakhand (Garhwal Himalayas)",
           deity: "Lord Badrinarayan (Vishnu)",
-          coords: { x: 560, y: 240 },
+          coords: { x: 577, y: 242 },
           element: "Tapas & Meditation",
           quote: "Satya Yuga Tirtha of Unshakeable Meditation",
           phonetic: "BUD-ree-naath (Gahrh-waal)",
@@ -8039,7 +8036,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "dhams",
           state: "Gujarat (Arabian Sea Coast)",
           deity: "Lord Dwarkadhish (Krishna)",
-          coords: { x: 295, y: 435 },
+          coords: { x: 302, y: 446 },
           element: "Karma & Rajadharma",
           quote: "The Golden Gateway of Righteous Action",
           phonetic: "DWAAR-kuh (Dwaar-kah-dheesh)",
@@ -8052,7 +8049,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "dhams",
           state: "Odisha (Bay of Bengal Coast)",
           deity: "Lord Jagannath, Balabhadra & Subhadra",
-          coords: { x: 765, y: 510 },
+          coords: { x: 772, y: 516 },
           element: "Bhakti & Universal Equality",
           quote: "Abode of Oceanic Devotional Fellowship",
           phonetic: "Juh-guhn-NAATH Poo-ree",
@@ -8065,7 +8062,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "dhams",
           state: "Tamil Nadu (Pamban Island)",
           deity: "Lord Ramanathaswamy (Shiva)",
-          coords: { x: 545, y: 740 },
+          coords: { x: 527, y: 772 },
           element: "Jnana & Shaiva-Vaishnava Unity",
           quote: "Where Rama Consecrated Shiva",
           phonetic: "Rah-meh-shwuh-RUHM (Say-too-buhn-dhuh)",
@@ -8080,7 +8077,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "elements",
           state: "Tamil Nadu (Kanchipuram)",
           deity: "Prithvi Lingam (Soil / Earth)",
-          coords: { x: 560, y: 650 },
+          coords: { x: 550, y: 755 },
           element: "Prithvi (Earth)",
           quote: "Molded from Sand by Devi Kamakshi",
           phonetic: "AY-kuhm-buh-RESH-wuh-ruhr (Kahn-chee-poo-ruhm)",
@@ -8093,7 +8090,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "elements",
           state: "Tamil Nadu (Tiruchirappalli)",
           deity: "Appu Lingam (Water)",
-          coords: { x: 515, y: 655 },
+          coords: { x: 486, y: 705 },
           element: "Appu (Water)",
           quote: "Sanctum Submerged in Perpetual Spring",
           phonetic: "Jahm-boo-KESH-wuh-ruhr (Tee-roo-vah-nye-kah-vuhl)",
@@ -8106,7 +8103,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "elements",
           state: "Tamil Nadu (Tiruvannamalai)",
           deity: "Tejo Lingam (Fire)",
-          coords: { x: 540, y: 675 },
+          coords: { x: 555, y: 725 },
           element: "Tejas (Fire)",
           quote: "The Boundless Pillar of Cosmic Fire",
           phonetic: "Ah-roo-nah-chuh-LESH-wuh-ruhr (Ah-roo-nah-chuh-luh)",
@@ -8119,7 +8116,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "elements",
           state: "Andhra Pradesh (Srikalahasti)",
           deity: "Vayu Lingam (Air / Breath)",
-          coords: { x: 580, y: 625 },
+          coords: { x: 565, y: 675 },
           element: "Vayu (Air)",
           quote: "The Flickering Lamps of Silent Breath",
           phonetic: "Shree Kah-luh-HAHS-tee-shwuh-ruh (Vah-yoo)",
@@ -8132,7 +8129,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "elements",
           state: "Tamil Nadu (Chidambaram)",
           deity: "Akasha Lingam (Cosmic Space / Formless)",
-          coords: { x: 580, y: 680 },
+          coords: { x: 575, y: 625 },
           element: "Akasha (Space / Ether)",
           quote: "The Chidambara Rahasya: Formless Consciousness",
           phonetic: "THIL-lye Nuh-tuh-RAH-juh (Chee-duhm-buh-ruhm)",
@@ -8147,7 +8144,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "rivers",
           state: "Uttarakhand, UP, Bihar, WB",
           deity: "Devi Ganga / Celestial Descent",
-          coords: { x: 645, y: 398 },
+          coords: { x: 642, y: 395 },
           element: "Moksha & Spiritual Purity",
           quote: "Descent of Cosmic Waters through Shiva's Jata",
           phonetic: "GUHNG-gah Nuh-dee (Gahn-goh-tree)",
@@ -8160,7 +8157,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "rivers",
           state: "Uttarakhand, Haryana, Delhi, UP",
           deity: "Devi Yamuna / Daughter of Surya",
-          coords: { x: 532, y: 335 },
+          coords: { x: 535, y: 335 },
           element: "Bhakti & Divine Love",
           quote: "The Dark Waters of Sweet Devotion",
           phonetic: "YUH-moo-nah Nuh-dee (Yuh-moo-noh-tree)",
@@ -8173,7 +8170,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "rivers",
           state: "Madhya Pradesh, Gujarat",
           deity: "Devi Narmada / Daughter of Shiva",
-          coords: { x: 510, y: 456 },
+          coords: { x: 460, y: 466 },
           element: "Banalingas & Parikrama Austerity",
           quote: "Every Stone is a Sacred Lingam",
           phonetic: "NUHR-muh-dah Nuh-dee (Uh-muhr-kuhn-tuhk)",
@@ -8186,7 +8183,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "rivers",
           state: "Maharashtra, Telangana, AP",
           deity: "Dakshina Ganga",
-          coords: { x: 565, y: 570 },
+          coords: { x: 548, y: 544 },
           element: "Nourishment & Sage Gautama",
           quote: "The Southern Ganga Born of Sage Gautama's Prayer",
           phonetic: "GOH-dah-vuh-ree (Duhk-shee-nuh Guhng-gah)",
@@ -8199,7 +8196,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "rivers",
           state: "Karnataka, Tamil Nadu",
           deity: "Ponni / Agastya's Kamandalu",
-          coords: { x: 540, y: 735 },
+          coords: { x: 532, y: 718 },
           element: "Abundance & Cultural Cradle",
           quote: "The Golden River of the Southern Plains",
           phonetic: "KAA-vay-ree Nuh-dee (Tuh-luh-kaa-vay-ree)",
@@ -8212,7 +8209,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "rivers",
           state: "Ladakh, Punjab, Arabian Sea",
           deity: "Sindhu / Vedic River Mother",
-          coords: { x: 358, y: 300 },
+          coords: { x: 336, y: 312 },
           element: "Vedic Origins & Eternal Flow",
           quote: "The Mighty Northern River Celebrated in the Rigveda",
           phonetic: "SEEN-dhoo Nuh-dee (Een-doos)",
@@ -8225,7 +8222,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "rivers",
           state: "Himalayas to Triveni Sangam (Prayagraj)",
           deity: "Devi Saraswati / Goddess of Learning",
-          coords: { x: 430, y: 265 },
+          coords: { x: 440, y: 258 },
           element: "Inner Wisdom & Antahsalila (Hidden Flow)",
           quote: "The Lost Celestial Stream of Vedic Rishis",
           phonetic: "SUH-ruhs-wuh-tee Nuh-dee (Vay-deek)",
@@ -8240,7 +8237,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Gujarat (Prabhas Patan, Saurashtra)",
           deity: "Somnath (Lord of the Moon)",
-          coords: { x: 355, y: 478 },
+          coords: { x: 362, y: 518 },
           element: "Eternal Rebirth & Resilience",
           quote: "The Dawn of the 12 Jyotirlingas (सौराष्ट्रे सोमनाथं)",
           phonetic: "SOHM-naath (Pruh-bhaas Pah-tuhn)",
@@ -8253,7 +8250,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Andhra Pradesh (Srisailam, Nallamala Hills)",
           deity: "Mallikarjuna Swamy & Bhramaramba Devi",
-          coords: { x: 495, y: 620 },
+          coords: { x: 575, y: 625 },
           element: "Bhakti, Tapas & Shakta Harmony",
           quote: "The Kailash of the South (श्रीशैले मल्लिकार्जुनम्)",
           phonetic: "Muhl-lee-kaar-JOO-nuh (Shree-shy-luhm)",
@@ -8266,7 +8263,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Madhya Pradesh (Ujjain, Shipra River)",
           deity: "Mahakal (Lord of Time and Death)",
-          coords: { x: 485, y: 435 },
+          coords: { x: 486, y: 430 },
           element: "Kala (Time), Eternity & Transformation",
           quote: "The Sole South-Facing Lingam (उज्जयिन्यां महाकालम्)",
           phonetic: "Muh-haa-kah-LESH-wuh-ruhr (Ooj-jyn)",
@@ -8279,7 +8276,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Madhya Pradesh (Mandhata Island, Narmada)",
           deity: "Omkareshwar & Mamleshwar",
-          coords: { x: 525, y: 435 },
+          coords: { x: 525, y: 432 },
           element: "Pranava (Cosmic Sound Om)",
           quote: "The Island Shaped as the Sacred Om (ओङ्कारममलेश्वरम्)",
           phonetic: "Ohm-kah-RESH-wuh-ruhr (Mahn-dhaa-tah)",
@@ -8292,7 +8289,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Uttarakhand (Rudraprayag, 3,583m)",
           deity: "Sadashiva (Lord of the High Peaks)",
-          coords: { x: 525, y: 230 },
+          coords: { x: 535, y: 246 },
           element: "High Mountain Tapas & Liberation",
           quote: "Highest Abode of Lord Shiva (हिमालये तु केदारम्)",
           phonetic: "KAY-daar-naath (Hee-mah-luh-yuhs)",
@@ -8305,7 +8302,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Maharashtra (Sahyadri Ranges, near Pune)",
           deity: "Bhimashankar (Protector from Tyranny)",
-          coords: { x: 390, y: 515 },
+          coords: { x: 422, y: 532 },
           element: "Protection & Origin of Bhima River",
           quote: "The Forest Sanctuary of Sahyadri (डाकिन्यां भीमशङ्करम्)",
           phonetic: "Bhee-mah-SHUHN-kuhr (Suh-hyaa-dree)",
@@ -8318,7 +8315,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Uttar Pradesh (Varanasi, Ganga Bank)",
           deity: "Vishveshwara (Lord of the Cosmos)",
-          coords: { x: 645, y: 370 },
+          coords: { x: 642, y: 388 },
           element: "Transcendent Wisdom & Moksha",
           quote: "The Eternal City of Light (वारणस्यां तु विश्वेशम्)",
           phonetic: "KAA-shee Veesh-wuh-NAATH (Vuh-rah-nuh-see)",
@@ -8331,7 +8328,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Maharashtra (Nashik, Brahmagiri Mountain)",
           deity: "Trimbakeshwar (Brahma-Vishnu-Shiva Trinity)",
-          coords: { x: 415, y: 490 },
+          coords: { x: 440, y: 518 },
           element: "Trimurti Unity & Gautami Ganga",
           quote: "The Three-Faced Sacred Lingam (त्र्यम्बकं गौतमीतटे)",
           phonetic: "Tryuhm-buh-KESH-wuh-ruhr (Nah-sheek)",
@@ -8344,7 +8341,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Jharkhand (Deoghar, Santhal Parganas)",
           deity: "Vaidyanath (The Supreme Healer)",
-          coords: { x: 720, y: 375 },
+          coords: { x: 718, y: 384 },
           element: "Spiritual Healing & Surrender",
           quote: "The Divine Physician (परल्यां वैद्यनाथं च)",
           phonetic: "VY-dyuh-naath Dhaam (Day-oh-ghuhr)",
@@ -8357,7 +8354,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Gujarat (Near Dwarka, Saurashtra)",
           deity: "Nageshwar (Lord of Serpents)",
-          coords: { x: 330, y: 415 },
+          coords: { x: 344, y: 428 },
           element: "Fearlessness & Protection from Poison",
           quote: "Sanctuary of Fearlessness (नागेशं दारुकावने)",
           phonetic: "Nah-GAY-shwuh-ruhr (Daa-roo-kuh-vuh-nuh)",
@@ -8370,7 +8367,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Tamil Nadu (Rameswaram Island)",
           deity: "Ramanathaswamy (Lord Worshipped by Rama)",
-          coords: { x: 545, y: 740 },
+          coords: { x: 527, y: 772 },
           element: "Bhakti, Reconciliation & Setu Consecration",
           quote: "Consecrated by Sri Rama (सेतुबन्धे तु रामेशम्)",
           phonetic: "Rah-muh-nah-thuh-SWAH-mee (Pahm-buhn)",
@@ -8383,7 +8380,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "jyotirlingas",
           state: "Maharashtra (Verul, near Ellora Caves)",
           deity: "Grishneshwar / Ghushmeshwar",
-          coords: { x: 425, y: 535 },
+          coords: { x: 443, y: 550 },
           element: "Unconditional Faith & Divine Mercy",
           quote: "The 12th Jyotirlinga (घुश्मेशं च शिवालये)",
           phonetic: "Ghrish-NAY-shwuh-ruhr (El-loh-ruh)",
@@ -8398,7 +8395,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "landmarks",
           state: "National Capital Region (Yamuna Plains)",
           deity: "Imperial Chakra / Sovereign Seat",
-          coords: { x: 518, y: 308 },
+          coords: { x: 516, y: 307 },
           element: "Rashtra Dharma & Unity",
           quote: "Historic Indraprastha & Sovereign Capital",
           phonetic: "Nuh-yee DIL-lee (Een-druh-pruhs-thuh)",
@@ -8411,7 +8408,7 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
           category: "landmarks",
           state: "Himalayan Crown (Deva Bhumi)",
           deity: "Lord Shiva (Girisha / King of Mountains)",
-          coords: { x: 755, y: 300 },
+          coords: { x: 748, y: 287 },
           element: "Transcendence & Eternal Tapas",
           quote: "The Crown of Bharat (देवात्मा हिमालयो नाम नगाधिराजः)",
           phonetic: "SAAH-guhr-maah-thaah (Hee-mah-luh-yuh)",
@@ -8604,37 +8601,37 @@ Be factually precise and do not confuse different deities or epics.${groundingFa
         {
           id: "sindhu",
           name: "Sindhu (Indus)",
-          d: "M 418 116 L 426 132 L 420 150 L 405 172 L 390 192 L 376 212 L 366 232 L 360 252 L 362 272 L 366 286 L 358 300 L 343 310 L 330 320 L 318 330 L 304 340 L 296 350 L 297 360 L 302 370 L 307 380 L 306 390 L 300 400 L 295 410 L 298 420 L 305 428"
+          d: "M 400 145 L 390 165 L 380 190 L 370 215 L 362 240 L 352 265 L 340 290 L 336 312 L 322 332 L 308 350 L 302 370 L 303 390 L 302 410 L 295 428 L 285 442 L 278 448"
         },
         {
           id: "saraswati",
           name: "Saraswati",
-          d: "M 502 210 L 480 226 L 455 245 L 430 265 L 405 280 L 380 292 L 358 300"
+          d: "M 502 235 L 485 246 L 465 255 L 440 258 L 415 260 L 395 265 L 375 280 L 355 298 L 336 312"
         },
         {
           id: "yamuna",
           name: "Yamuna",
-          d: "M 516 222 L 528 258 L 534 292 L 532 335 L 550 360 L 580 380 L 615 395 L 645 398"
+          d: "M 530 310 L 534 335 L 540 355 L 555 370 L 575 385 L 600 398 L 628 400"
         },
         {
           id: "ganga",
           name: "Maa Ganga",
-          d: "M 566 235 L 575 265 L 590 300 L 610 335 L 628 368 L 645 398 L 675 405 L 710 410 L 748 412 L 784 416 L 808 432 L 826 456 L 836 485"
+          d: "M 536 252 L 540 275 L 550 305 L 565 335 L 580 355 L 605 380 L 628 400 L 642 395 L 665 390 L 695 386 L 718 384 L 745 386 L 765 392 L 785 405 L 805 420 L 825 435 L 835 460 L 838 485 L 835 510"
         },
         {
           id: "narmada",
           name: "Narmada",
-          d: "M 398 463 L 425 463 L 450 461 L 480 458 L 510 456 L 540 456 L 570 456 L 605 458 L 640 460 L 665 462"
+          d: "M 504 463 L 485 464 L 460 466 L 440 468 L 425 470 L 416 474 L 408 483 L 396 487"
         },
         {
           id: "godavari",
           name: "Godavari",
-          d: "M 430 495 L 455 515 L 485 540 L 510 565 L 535 568 L 565 570 L 600 575 L 635 590 L 665 605"
+          d: "M 445 520 L 460 525 L 480 531 L 500 538 L 515 543 L 522 547 L 535 552 L 548 544 L 565 548 L 580 560 L 595 570 L 608 595 L 620 608 L 630 620 L 638 630"
         },
         {
           id: "kaveri",
           name: "Kaveri",
-          d: "M 455 715 L 475 715 L 495 708 L 512 698 L 525 715 L 540 735 L 565 745 L 585 742"
+          d: "M 465 694 L 480 698 L 498 700 L 510 702 L 525 706 L 532 718 L 537 728 L 544 734 L 558 734 L 572 728 L 578 722"
         }
       ];
 

@@ -10,7 +10,7 @@ function getApiKey(req) {
     return envKey.trim();
   }
   // Allow client override if passed in header
-  const clientKey = req.headers['x-gemini-key'] || req.body?.apiKey;
+  const clientKey = req.headers['x-gemini-key'] || req.headers['x-ai-key'] || req.body?.apiKey;
   if (clientKey && clientKey.trim() && clientKey !== 'YOUR_GEMINI_API_KEY_HERE') {
     return clientKey.trim();
   }
@@ -30,7 +30,7 @@ router.get('/status', (req, res) => {
 
 // Helper to call Gemini API with fallback across model versions
 async function callGemini(apiKey, payload) {
-  const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-2.5-pro', 'gemini-flash-lite-latest'];
+  const models = ['gemini-flash-lite-latest', 'gemini-3.8-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-flash-latest'];
   let lastError = null;
 
   for (const model of models) {
@@ -51,7 +51,7 @@ async function callGemini(apiKey, payload) {
         }
       } else {
         const errJson = await response.json().catch(() => ({}));
-        lastError = new Error(errJson.error?.message || `Gemini API error ${response.status}`);
+        lastError = new Error(errJson.error?.message || `AI API error ${response.status}`);
         console.warn(`Model ${model} returned error:`, errJson.error?.message || response.status);
       }
     } catch (err) {
@@ -60,7 +60,7 @@ async function callGemini(apiKey, payload) {
     }
   }
 
-  throw lastError || new Error('All Gemini models failed to generate content');
+  throw lastError || new Error('AI service failed to generate content');
 }
 
 // POST /api/ai/ask - Ask question powered by single API key
@@ -75,7 +75,7 @@ router.post('/ask', async (req, res) => {
     if (!apiKey) {
       return res.status(400).json({
         success: false,
-        error: 'No API key configured on server. Please add GEMINI_API_KEY to your .env file.',
+        error: 'Server AI key not configured. Using built-in engine.',
         fallback: true
       });
     }
@@ -153,7 +153,7 @@ async function handleVisionAnalysis(req, res) {
     if (!apiKey) {
       return res.status(400).json({
         success: false,
-        error: 'No API key configured on server. Please add GEMINI_API_KEY to your .env file.',
+        error: 'Server AI key not configured. Using built-in engine.',
         fallback: true
       });
     }
@@ -193,7 +193,7 @@ Strictly do NOT use emojis anywhere in your response. Format your analysis clear
 
     res.json({
       success: true,
-      source: 'Vision AI',
+      source: 'E-Heritage Vision AI',
       analysis: cleanedText
     });
   } catch (err) {
